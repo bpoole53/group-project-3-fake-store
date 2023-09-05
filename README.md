@@ -1,1 +1,0 @@
-# group-project-3-fake-store
