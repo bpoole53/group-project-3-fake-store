@@ -3,6 +3,8 @@ import Cookies from 'js-cookie'
 import { AppProvider } from './utils/AppContext'
 import {Home, Login, Signup} from './pages'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import Header from './components/Header'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   
@@ -35,9 +37,7 @@ function App() {
   return (
     <AppProvider>
       <div>
-        <header>
-          <h1>A title</h1>
-        </header>
+        <Header/>
 
         <BrowserRouter>
           <Routes>
