@@ -6,7 +6,7 @@ const {
   update,
   updateById,
   remove 
-} = require('../../controllers/user.controller');
+} = require('../../controllers/user-controller');
 
 router.get("/", async (req, res) => {
   try {
