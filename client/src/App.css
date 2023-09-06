@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+  background-color: rgb(170, 170, 170);
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 200px;
+}

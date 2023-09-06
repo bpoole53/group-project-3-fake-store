@@ -1,9 +1,24 @@
+
+
 const { Schema, model } = require('mongoose');
 
 
 const productSchema = new Schema ({
+  name: {
+    type: String,
+    required: true,
+  },
+  description: String,
+  price: {
+    type: Number,
+    required: true,
+  },
+  //photo: {
+  // data: Buffer, // Binary data for the image
+  //contentType: String, // MIME type of the image (e.g., image/jpeg, image/png)
+  //}
+});
 
-})
 
 
 const Product = model('Product', productSchema);

@@ -38,7 +38,7 @@ const userController = {
         const token = jwt.sign({
             email: user.email,
             id: user._id
-        }, process.env.JWT_SECRET); // Add your JWT secret here
+        }, process.env.JWT_SECRET); //JWT secret 
 
         const { password, ...modifiedUser } = user;
         res.cookie("auth-cookie", token).json({ status: "success", payload: modifiedUser });
@@ -49,7 +49,7 @@ const userController = {
         if (!cookie) return res.status(401).json({ msg: "Unauthorized" });
 
         try {
-            const isVerified = jwt.verify(cookie, process.env.JWT_SECRET); // Add your JWT secret here
+            const isVerified = jwt.verify(cookie, process.env.JWT_SECRET); //  JWT secret 
             if (!isVerified) return res.status(401).json({ msg: "Unauthorized" });
 
             const user = await User.findOne({ _id: isVerified.id }).select("-password");
