@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LoginForm from "../components/LoginForm";
 
 export default function Login(){
     const [formData, setFormData] = useState({email: '', password: ''})
@@ -18,7 +19,7 @@ export default function Login(){
 
     return (
         <>
-        <h1> Login </h1>
+         <LoginForm/>
         </>
     )
 

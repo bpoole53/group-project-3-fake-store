@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Cookies from 'js-cookie'
 import { AppProvider } from './utils/AppContext'
-import {Home, Login, Signup} from './pages'
+import {Home, Login, Signup,Products,Profile,Cart,About,Checkout} from './pages'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -45,6 +45,11 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/checkout' element={<Checkout />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/profile' element={<Profile />} />
 
           </Routes>      
         </BrowserRouter>
