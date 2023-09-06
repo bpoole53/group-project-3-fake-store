@@ -12,3 +12,19 @@ body {
   margin-bottom: 0;
   height: 200px;
 }
+
+.loginForm h1, .signupForm h1 {
+  color: black;
+}
+
+.loginForm, .signupForm {
+  gap: 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginForm .link {
+  color: black;
+}
