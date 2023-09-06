@@ -5,8 +5,9 @@ body {
   background-color: rgb(170, 170, 170);
 }
 
+
 .footer {
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0;
   margin-bottom: 0;
