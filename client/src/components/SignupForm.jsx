@@ -1,10 +1,9 @@
 
 export default function SignupForm () {
 
-
-
   return (
-    <div className="justify-center">
+    <div className="signupForm justify-center">
+      <h1>Welcome! Register Below: </h1>
       <input type="text" placeholder="First Name" className="input input-bordered w-full max-w-xs justify-center" />
       <input type="text" placeholder="Last Name" className="input input-bordered w-full max-w-xs justify-center" />
       <input type="text" placeholder="Username" className="input input-bordered w-full max-w-xs justify-center" />
