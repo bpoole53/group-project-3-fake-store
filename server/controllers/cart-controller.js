@@ -1,4 +1,7 @@
 
+
+const Cart = require('../models/Cart')
+
 const cartController = {
 
   createCart: async (req, res) => {
@@ -17,3 +20,6 @@ const cartController = {
 
   },
 }
+
+module.exports = cartController
+  
