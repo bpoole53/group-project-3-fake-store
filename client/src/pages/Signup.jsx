@@ -29,69 +29,50 @@ export default function Signup(){
       }
     
       return (
-        <div style={{ width: "50%", marginLeft: "auto", marginRight: "auto" }}>
-          <h1>Signup Page</h1>
-    
-          <form className="form mb-3">
-    
-            <div className="form-group mb-3">
-              <label>First Name</label>
-              <input   
-                type="text"
-                name="fname"
-                placeholder="John"
-                className="form-control"
-                value={formData.fname}
-                onChange={handleInputChange}
-              />
-            </div>
-    
-            <div className="form-group mb-3">
-              <label>Last Name</label>
-              <input   
-                type="text"
-                name="lname"
-                placeholder="Doe"
-                className="form-control"
-                value={formData.lname}
-                onChange={handleInputChange}
-              />
-            </div>
-    
-    
-            <div className="form-group mb-3">
-              <label>Email Address</label>
-              <input   
-                type="text"
-                name="email"
-                placeholder="john@gmail.com"
-                className="form-control"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-            </div>
-    
-            <div className="form-group mb-3">
-              <label>Password</label>
-              <input   
-                type="password"
-                name="password"
-                className="form-control"
-                value={formData.password}
-                onChange={handleInputChange}
-              />
-            </div>
-    
-            <div className="form-group mt-2">
-              <button className="btn btn-primary" onClick={handleFormSubmit}>Sign Me Up!</button>
-            </div>
-          </form>
-    
+        <div className="signupForm justify-center">
+          <h1>Welcome! Register Below: </h1>
+          <input 
+            type="text" 
+            placeholder="First Name" 
+            name="fname"
+            className="input input-bordered w-full max-w-xs justify-center" 
+            value={formData.fname}
+            onChange={handleInputChange}
+          />
+          <input 
+            type="text" 
+            placeholder="Last Name" 
+            name="lname"
+            className="input input-bordered w-full max-w-xs justify-center" 
+            value={formData.lname}
+            onChange={handleInputChange}
+          />
+          <input 
+            type="email" 
+            placeholder="Email" 
+            name="email"
+            className="input input-bordered w-full max-w-xs justify-center" 
+            value={formData.email}
+            onChange={handleInputChange}
+          />
+
+          <input 
+            type="password" 
+            placeholder="Password" 
+            name="password"
+            className="input input-bordered w-full max-w-xs justify-center" 
+            value={formData.password}
+            onChange={handleInputChange}
+          />
+
+          <button className="btn justify-center" onClick={handleFormSubmit}>Sign Up</button>
+
           { signupResult === "fail" && (
             <div className="alert alert-danger" role="alert">
-              Signup failed!
+               Signup failed!
             </div>
-          )}
+          )} 
+          
         </div>
       )
     }
