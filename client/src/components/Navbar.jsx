@@ -1,40 +1,50 @@
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navigation() {
+
+
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="">Fake Store</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavDropdown title="Shop" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Category 2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Category 3</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Sale
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="">About</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="">Profile</Nav.Link>
-            <Nav.Link eventKey={2} href="">
-              Shopping Cart
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+    <div className="navbar bg-base-100">
+    <div className="navbar-start">
+    <div className="dropdown">
+        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>About</a></li>
+          <li>
+            <a>Shop</a>
+            <ul className="p-2">
+              <li><a>Category 1</a></li>
+              <li><a>Category 2</a></li>
+            </ul>
+          </li>
+          <li><a>Cart</a></li>
+        </ul>
+      </div>
+      <a className="btn btn-ghost normal-case text-xl">Fake Store</a>
+    </div>
+    <div className="navbar-center hidden lg:flex">
+      <ul className="menu menu-horizontal px-1">
+        <li><a>About</a></li>
+        <li tabIndex={0}>
+          <details>
+            <summary>Shop</summary>
+            <ul className="p-2">
+              <li><a>Category 1</a></li>
+              <li><a>Category 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>Cart</a></li>
+      </ul>
+    </div>
+    <div className="navbar-end">
+      <a className="btn">Login</a>
+    </div>
+   </div>
+  )
 }
 
 export default Navigation;
