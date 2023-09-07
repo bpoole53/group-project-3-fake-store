@@ -1,7 +1,7 @@
 const db = require('../config/connection');
 
 const dbClean = require('./dbClean');
-import {Cart,Product,User} from '../models'
+const {Cart,Product,User} = require('../models')
 
 const productData = require('./productData.json')
 const userData = require('./userData.json')
