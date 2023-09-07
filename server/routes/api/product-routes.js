@@ -1,12 +1,11 @@
 
 
 
-
 const express = require("express");
 const router = express.Router();
 const productController = require("../../controllers/product-controller");
 
-// GET Create a new product
+// POST Create a new product
 router.post("/", productController.createProduct);
 
 // PUT Update a product by ID
