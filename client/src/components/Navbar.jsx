@@ -24,7 +24,9 @@ function Navigation() {
           <a className="btn searchBtn" type="submit" href="/products">Search</a>
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl" href="/">Fake Store</a>
+      <a className="btn btn-ghost normal-case text-xl" href="/">Fake Store
+      
+      </a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
