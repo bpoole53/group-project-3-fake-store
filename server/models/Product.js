@@ -15,7 +15,7 @@ const productSchema = new Schema ({
   },
   //photo: {
   // data: Buffer, // Binary data for the image
-  //contentType: String, // MIME type of the image (e.g., image/jpeg, image/png)
+  //contentType: String, e.g., image/jpeg, image/png)
   //}
 });
 
