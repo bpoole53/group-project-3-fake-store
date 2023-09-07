@@ -1,0 +1,26 @@
+[
+{
+
+    "name":"Lorem item",
+    "description":"An Item!",
+    "price":40
+},
+{
+
+    "name":"Lorem item 2",
+    "description":"An Item!",
+    "price":20
+},
+{
+
+    "name":"Lorem item 3",
+    "description":"And Item!",
+    "price":50
+},
+{
+
+    "name":"Lorem item 4",
+    "description":"An Item!",
+    "price":60
+}
+]

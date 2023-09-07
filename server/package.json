@@ -8,5 +8,9 @@
     "mongodb": "^6.0.0",
     "mongoose": "^7.5.0",
     "react-router-dom": "^6.15.0"
+  },
+  "scripts": {
+    "seed": "node seeds/seed.js"
+
   }
 }
