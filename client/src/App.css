@@ -9,16 +9,6 @@ body {
   margin-right: 15px;
 }
 
-.card-body {
-  background-color: rgb(170, 170, 170);
-  height: 150px
-}
-
-.card-title, .card-price {
-  color: black;
-  font-weight: bold;
-}
-
 .productBtn {
   background-color: rgb(26, 30, 36);
   border-color: white;
@@ -31,11 +21,9 @@ body {
 
 .productContainer {
   display: flex;
-  align-content: flex-start;
   justify-content: center;
-  margin-top: 10px;
   margin-bottom: 10px;
-}
+} 
 
 .prodCol {
   border: 2px solid black;
@@ -45,6 +33,22 @@ body {
   display: flex;
   flex-wrap:wrap;
   gap: 10px;
+}
+
+.card-body {
+  background-color: rgb(170, 170, 170);
+  height: 150px
+}
+
+.card-title, .card-price {
+  color: black;
+  font-weight: bold;
+}
+
+.productTitle {
+  color: black;
+  text-align: center;
+  font-size: 50px;
 }
 
 .footer {
