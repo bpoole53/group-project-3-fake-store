@@ -4,6 +4,7 @@ const { Schema, model } = require('mongoose');
 
 
 const productSchema = new Schema ({
+  _id: { type: Schema.Types.ObjectId },
   name: {
     type: String,
     required: true,
