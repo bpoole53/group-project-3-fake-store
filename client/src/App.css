@@ -5,8 +5,50 @@ body {
   background-color: rgb(170, 170, 170);
 }
 
+.cartNav {
+  margin-right: 15px;
+}
+
+.card-body {
+  background-color: rgb(170, 170, 170);
+  height: 150px
+}
+
+.card-title, .card-price {
+  color: black;
+  font-weight: bold;
+}
+
+.productBtn {
+  background-color: rgb(26, 30, 36);
+  border-color: white;
+}
+
+.productBtn:hover{
+  background-color: rgb(52, 59, 71);
+  border-color: white;
+}
+
+.productContainer {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.prodCol {
+  border: 2px solid black;
+  width: 1000px;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
 .footer {
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0;
   margin-bottom: 0;

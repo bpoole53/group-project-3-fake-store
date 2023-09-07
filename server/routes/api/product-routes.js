@@ -5,7 +5,7 @@ const express = require("express");
 const router = express.Router();
 const productController = require("../../controllers/product-controller");
 
-//  POST create a new product
+// POST Create a new product
 router.post("/", productController.createProduct);
 
 // PUT Update a product by ID
