@@ -16,8 +16,5 @@ router.get("/", productController.getAllProducts);
 
 // DELETE a product by ID
 router.delete("/:id", productController.deleteProduct);
-=======
-const router = require('express').Router();
-
 
 module.exports = router;
