@@ -1,5 +1,6 @@
 
 
+
 const express = require("express");
 const router = express.Router();
 const productController = require("../controllers/productController");
@@ -15,5 +16,8 @@ router.get("/", productController.getAllProducts);
 
 // DELETE a product by ID
 router.delete("/:id", productController.deleteProduct);
+=======
+const router = require('express').Router();
+
 
 module.exports = router;
