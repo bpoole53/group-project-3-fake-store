@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCardContainer from "../components/ProductCardContainer";
-
+import '../App.css'
 
 export default function Products() {
 
@@ -8,13 +8,14 @@ export default function Products() {
 	const getProducts = [];
 
 	return (
-
 		<>
+		<div className="productPageContainer">
+		<h1 className="productTitle">Products</h1>
 			<ProductCardContainer/>
 			{/* {getProducts.map( p => (
 			<ProductCard product = {p}/>))} */}
+		</div>
 		</>
-
 	)
 		
 
