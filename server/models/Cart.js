@@ -12,13 +12,12 @@ const cartItemSchema = new Schema({
   quantity: {
     type: Number,
     required: true,
-    default: 1, // Default quantity is 1
+    default: 1, // default user schema when product is added 
   },
-  // 
 });
 
 const cartSchema = new Schema({
-  items: [cartItemSchema], // integrate cartItemSchema
+  items: [cartItemSchema], 
   total: {
     type: Number,
     required: true,
