@@ -2,11 +2,21 @@ const router = require('express').Router();
 const { 
   find,
   findById,
-  create,
+  createUser,
   update,
   updateById,
   remove 
 } = require('../../controllers/user-controller');
+
+router.post("/", async (req, res) => {
+  try {
+    const payload = await createUser(req, res); 
+    return res.status(201).json({ status: "success", payload }); 
+  } catch (err) {
+    return res.status(400).json({ status: "error", msg: err.message }); 
+  }
+});
+
 
 router.get("/", async (req, res) => {
   try {
