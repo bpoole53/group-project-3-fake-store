@@ -1,4 +1,4 @@
-{
+[
 {
 
     "name":"Lorem item",
@@ -23,4 +23,4 @@
     "description":"An Item!",
     "price":60
 }
-}
+]

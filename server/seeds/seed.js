@@ -6,9 +6,9 @@ import {Cart,Product,User} from '../models'
 const productData = require('./productData.json')
 const userData = require('./userData.json')
 
-db.('open', async () => {
-    await cleanDB('Product', 'products');
-    await cleanDB('User', 'users');
+db.once('open', async () => {
+    await dbClean('Product', 'products');
+    await dbClean('User', 'users');
   
     await Product.insertMany(productData);
   
