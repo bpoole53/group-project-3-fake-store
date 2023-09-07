@@ -20,7 +20,8 @@ function Navigation() {
               <li><a>Category 2</a></li>
             </ul>
           </li>
-          <li><a href="/cart">Cart</a></li>
+          <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
+          <a className="btn searchBtn" type="submit" href="/products">Search</a>
         </ul>
       </div>
       <a className="btn btn-ghost normal-case text-xl" href="/">Fake Store</a>
@@ -37,10 +38,12 @@ function Navigation() {
             </ul>
           </details>
         </li>
-        <li><a href="/cart">Cart</a></li>
+        <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
+        <a className="btn searchBtn" type="submit" href="/products">Search</a>
       </ul>
     </div>
     <div className="navbar-end">
+      <a href="/cart" className="cartNav">Cart</a>
       <a className="btn" href="/login">Login</a>
     </div>
    </div>
