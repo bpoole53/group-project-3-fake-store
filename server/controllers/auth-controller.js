@@ -1,67 +1,83 @@
 
 
-const { User } = require('../models');
-const { create, find, findOne } = require("./user-controller")
+const { create, find, findOne } = require("./user-controller");
 const jwt = require("jsonwebtoken");
-require("dotenv").config()
+const bcrypt = require("bcrypt"); 
+require("dotenv").config();
 
-function signToken(user){
-  return jwt.sign({ email: user.email, id: user._id}, process.env.JWT_SECRET)
+function signToken(user) {
+  return jwt.sign({ email: user.email, id: user._id }, process.env.JWT_SECRET);
 }
 
 async function register(req) {
-  let user 
+  let user;
 
-  // use the create method on the User controller to first create the user
   try {
-    user = await create(req.body)
-  } catch(err){
-    //if( process.env.NODE_ENV === "development") console.log(err)
-    //throw err
+    // Use the create method on the User controller to first create the user
+    user = await create(req.body);
+  } catch (err) {
+    if (process.env.NODE_ENV === "development") console.log(err);
+    return { status: "error", msg: "Registration failed" };
   }
 
-  const token = signToken(user)
+  const token = signToken(user);
 
   const { password, ...modifiedUser } = user;
-  return { status: "success", token, user: modifiedUser }
-}
 
+  return { status: "success", token, user: modifiedUser };
+}
 
 async function login(req) {
-  let user
+  let user;
 
-  // TODO: use the find method on the User controller to first find the user based on the email submitted
+  try {
+    // Use the find method on the User controller to find the user based on the email submitted
+    user = await find({ email: req.body.email });
+    
+    if (!user) {
+      return { status: "error", msg: "Authentication failed" };
+    }
 
+    // Call the verify() instance method in the User model to be sure the password is legit
+    const passwordIsValid = await user.verify(req.body.password);
+    
+    if (!passwordIsValid) {
+      return { status: "error", msg: "Authentication failed" };
+    }
 
-  if( !user ) return { status: "error", msg: "could not authentixate" }
+    const token = signToken(user);
 
-  // TODO: call the verify() instance method in the User model to be sure the password is legit
-
-  if( !passwordIsValid ) return { status: "error", msg: "could not authentixate" }
-
-  const token = signToken(user)
-
-  const { password, ...modifiedUser } = user;
-  return { status: "success", token, user: modifiedUser }
+    const { password, ...modifiedUser } = user;
+    return { status: "success", token, user: modifiedUser };
+  } catch (error) {
+    return { status: "error", msg: "Authentication failed" };
+  }
 }
 
+async function verify(req) {
+  const cookie = req.cookies["auth-cookie"];
+  if (!cookie) {
+    return { status: "error", msg: "Unauthorized" };
+  }
 
-async function verify(req){
-  const cookie = req.cookies["auth-cookie"]
-  if( !cookie ) return { status: "error", msg: "unauthorized" }
+  try {
+    const decryptCookie = jwt.verify(cookie, process.env.JWT_SECRET);
 
-  const decryptCookie = jwt.verify(cookie, process.env.JWT_SECRET)
-  if( !decryptCookie ) return { status: "error", msg: "unauthorized" }
+    // Use the findOne method on the user controller to look up the user by the id returned from verifying the token
+    const foundUser = await findOne({ _id: decryptCookie.id });
 
-  // use the findOne method on the user controller to look up the user by the id returned from verifying the token
-  
-  if( !foundUser ) return { status: "error", msg: "unauthorized" }
-  
-  return { status: "success", user:foundUser }
+    if (!foundUser) {
+      return { status: "error", msg: "Unauthorized" };
+    }
+
+    return { status: "success", user: foundUser };
+  } catch (error) {
+    return { status: "error", msg: "Unauthorized" };
+  }
 }
 
 module.exports = {
   register,
   login,
   verify
-}
+};
