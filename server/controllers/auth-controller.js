@@ -22,7 +22,8 @@ async function register(req) {
 
   const token = signToken(user);
 
-  const { password, ...modifiedUser } = user._userdoc;
+  const { password, ...modifiedUser } = user._doc;
+
 
   return { status: "success", token, user: modifiedUser };
 }
