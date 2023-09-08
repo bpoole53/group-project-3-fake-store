@@ -37,7 +37,11 @@ body {
 
 .card-body {
   background-color: rgb(170, 170, 170);
-  height: 150px
+  height: 150px;
+}
+
+.card-compact {
+  width: 250px;
 }
 
 .card-title, .card-price {
@@ -73,4 +77,28 @@ body {
 
 .loginForm .link {
   color: black;
+}
+
+.product-page-container{
+  display: flex;
+  align-items: center;
+  margin: 100px;
+}
+
+.product-page-title {
+  color: black;
+  font-size: 40px;
+}
+
+.product-page-text {
+  color: black;
+}
+
+.product-page-button {
+  background-color: black;
+  margin-top: 10px;
+}
+
+.product-text-container {
+  margin-left: 20px;
 }

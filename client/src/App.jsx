@@ -6,6 +6,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
+import ProductPage from "./pages/ProductPage"
 
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/profile' element={<Profile />} />
-
+            <Route path='/productpage' element={<ProductPage/>}/>
           </Routes>      
         </BrowserRouter>
 
