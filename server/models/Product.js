@@ -14,10 +14,10 @@ const productSchema = new Schema ({
     type: Number,
     required: true,
   },
-  //photo: {
-  // data: Buffer, // Binary data for the image
-  //contentType: String, e.g., image/jpeg, image/png)
-  //}
+  photo: {
+  data: Buffer, 
+  contentType: String,
+  }
 });
 
 
