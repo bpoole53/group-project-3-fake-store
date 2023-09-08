@@ -12,8 +12,8 @@ export default function Products() {
 		<div className="productPageContainer">
 		<h1 className="productTitle">Products</h1>
 			<ProductCardContainer/>
-			{/* {getProducts.map( p => (
-			<ProductCard product = {p}/>))} */}
+			{getProducts.map( p => (
+			<ProductCard product = {p}/>))}
 		</div>
 		</>
 	)

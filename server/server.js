@@ -30,7 +30,7 @@ dbConnection.once('open', () => {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(routes);
+app.use("/api", apiRoutes);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '..', 'client/build')));
