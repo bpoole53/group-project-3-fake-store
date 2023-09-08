@@ -5,6 +5,7 @@ function Navigation() {
 
 
   return (
+    <>
     <div className="navbar bg-base-100">
     <div className="navbar-start">
     <div className="dropdown">
@@ -24,7 +25,9 @@ function Navigation() {
           <a className="btn searchBtn" type="submit" href="/products">Search</a>
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl" href="/">Fake Store</a>
+      <a className="btn btn-ghost normal-case text-xl" href="/">Style Shop
+      
+      </a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
@@ -47,6 +50,7 @@ function Navigation() {
       <a className="btn" href="/login">Login</a>
     </div>
    </div>
+   </>
   )
 }
 
