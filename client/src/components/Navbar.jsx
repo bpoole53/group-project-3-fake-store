@@ -5,6 +5,7 @@ function Navigation() {
 
 
   return (
+    <>
     <div className="navbar bg-base-100">
     <div className="navbar-start">
     <div className="dropdown">
@@ -49,6 +50,7 @@ function Navigation() {
       <a className="btn" href="/login">Login</a>
     </div>
    </div>
+   </>
   )
 }
 

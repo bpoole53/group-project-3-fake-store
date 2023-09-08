@@ -57,6 +57,7 @@ body {
   bottom: 0;
   margin-bottom: 0;
   height: 200px;
+  background-color: rbg (26, 30, 36);
 }
 
 .loginForm h1, .signupForm h1 {
