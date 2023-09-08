@@ -1,26 +1,184 @@
+
+
 [
-{
-
-    "name":"Lorem item",
-    "description":"An Item!",
-    "price":40
-},
-{
-
-    "name":"Lorem item 2",
-    "description":"An Item!",
-    "price":20
-},
-{
-
-    "name":"Lorem item 3",
-    "description":"And Item!",
-    "price":50
-},
-{
-
-    "name":"Lorem item 4",
-    "description":"An Item!",
-    "price":60
-}
-]
+    {
+      "name": "Sailboat",
+      "description": "A beautiful sailboat for leisurely cruising.",
+      "price": 35000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Fishing Boat",
+      "description": "Perfect for a day of fishing on the lake.",
+      "price": 28000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Luxury Yacht",
+      "description": "Luxury yacht with all the amenities.",
+      "price": 120000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Versatile Canoe",
+      "description": "A versatile canoe for outdoor enthusiasts.",
+      "price": 800,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Compact Kayak",
+      "description": "A compact kayak for solo adventures.",
+      "price": 500,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Powerful Speedboat",
+      "description": "A powerful speedboat for water sports.",
+      "price": 55000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Massive Cruise Ship",
+      "description": "A massive cruise ship for unforgettable vacations.",
+      "price": 1000000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Reliable Ferry",
+      "description": "A reliable ferry for transportation services.",
+      "price": 500000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Comfortable Pontoon Boat",
+      "description": "A comfortable pontoon boat for family outings.",
+      "price": 18000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Thrilling Jet Ski",
+      "description": "A thrilling jet ski for water adventures.",
+      "price": 4500,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Cozy Houseboat",
+      "description": "A cozy houseboat for living on the water.",
+      "price": 75000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Small Dinghy",
+      "description": "A small dinghy for short trips and fishing.",
+      "price": 1200,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Ski Boat",
+      "description": "A ski boat for high-speed water sports.",
+      "price": 32000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Inflatable Raft",
+      "description": "An inflatable raft for river adventures.",
+      "price": 350,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Stable Catamaran",
+      "description": "A stable catamaran for group sailing.",
+      "price": 55000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Classic Rowboat",
+      "description": "A classic rowboat for peaceful lake excursions.",
+      "price": 600,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Submarine",
+      "description": "A submarine for underwater exploration.",
+      "price": 800000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Hovercraft",
+      "description": "A hovercraft for versatile water transportation.",
+      "price": 100000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Sturdy Tugboat",
+      "description": "A sturdy tugboat for maritime operations.",
+      "price": 40000,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    },
+    {
+      "name": "Compact Personal Watercraft",
+      "description": "A compact personal watercraft for fun on the water.",
+      "price": 2500,
+      "image": {
+        "data": "",
+        "contentType": ""
+      }
+    }
+  ]
