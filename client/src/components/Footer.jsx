@@ -17,7 +17,7 @@ export default function Footer () {
       </div>
     </nav> 
     <aside>
-      <p>Copyright © 2023 - All right reserved by Fake Store Inc</p>
+      <p>Copyright © 2023 - All right reserved by Style Shop Inc</p>
     </aside>
    </footer>
   )
