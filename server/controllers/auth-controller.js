@@ -22,7 +22,7 @@ async function register(req) {
 
   const token = signToken(user);
 
-  const { password, ...modifiedUser } = user;
+  const { password, ...modifiedUser } = user._userdoc;
 
   return { status: "success", token, user: modifiedUser };
 }
@@ -47,7 +47,7 @@ async function login(req) {
 
     const token = signToken(user);
 
-    const { password, ...modifiedUser } = user;
+    const { password, ...modifiedUser } = user._doc;
     return { status: "success", token, user: modifiedUser };
   } catch (error) {
     return { status: "error", msg: "Authentication failed" };
