@@ -7,7 +7,7 @@ export default function Footer () {
     <nav className="grid grid-flow-col gap-4">
       <a className="link link-hover" href="/about">About us</a> <span/>
     </nav> 
-    <nav><img className="grid grid=flow-col gap-4" src="/public/StyleShopLogo.png" heighth = "20%" width= "20%"/></nav>
+    <nav><img className="grid grid=flow-col gap-4" src="/StyleShopLogo.png" heighth = "20%" width= "20%"/></nav>
     <nav>
       
       <div className="grid grid-flow-col gap-4">
