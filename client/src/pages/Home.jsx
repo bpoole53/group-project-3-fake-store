@@ -7,14 +7,6 @@ export default function Home(){
 	<>
 		
 		<Hero/>
-		{/* <!-- prompt to shop? --> */}
-
-		{/* <a href="/Products"><Button>Go To Products</Button></a> */}
-
-		{/* <!-- <Button onclick="goToProducts"/> --> */}
-
-
-
 
 
 	</>	
