@@ -15,8 +15,8 @@
       "description": "Perfect for a day of fishing on the lake.",
       "price": 28000,
       "image": {
-        "data": "base64-encoded-image-data-2",
-        "contentType": "image/jpeg"
+        "data": "",
+        "contentType": ""
       }
     },
     {
