@@ -1,7 +1,14 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   height: 1000px;
+  background-color: rgb(170, 170, 170);
+} */
+
+.inside-body{
+  margin: 0;
+  padding: 0;
+  height: 645px;
   background-color: rgb(170, 170, 170);
 }
 
