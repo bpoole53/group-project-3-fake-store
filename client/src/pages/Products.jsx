@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCardContainer from "../components/ProductCardContainer";
+import ProductCard from "../components/ProductCard";
 import '../App.css'
 
 export default function Products() {
