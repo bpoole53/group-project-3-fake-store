@@ -5,6 +5,8 @@ const express = require("express");
 const router = express.Router();
 const productController = require("../../controllers/product-controller");
 
+/// http://localhost:3001/api/product
+
 // POST Create a new product
 router.post("/", productController.createProduct);
 
