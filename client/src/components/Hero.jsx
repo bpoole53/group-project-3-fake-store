@@ -64,7 +64,7 @@ export default function Hero () {
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">The waters are calling...</h1>
-          <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <p className="mb-5">From beginning design to finished product, at Hull & Deck, we equipt our watercraft with the highest quality of building products available. We build   </p>
           <button className="btn btn-primary" onClick={sendtoProducts}>Shop All Watercraft</button>
       </div>
       </div>
