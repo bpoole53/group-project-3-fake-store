@@ -2,7 +2,7 @@
 
 const User = require('../models/User')
 const jwt = require('jsonwebtoken')
-require('dotenv').config
+require('dotenv').config()
 
 
 const userController = {
@@ -14,7 +14,7 @@ const userController = {
             const token = jwt.sign({
                 email: user.email,
                 id: user._id
-            }, process.env.JWT_SECRET); ///jwt SECRET
+            }, process.env.JWT_SECRET, {expiresIn: 60 * 60}); ///jwt SECRET
 
             res.cookie('auth-cookie', token).json({ status: 'success', payload: modifiedUser });
         } catch (err) {
@@ -46,7 +46,7 @@ const userController = {
         const token = jwt.sign({
             email: user.email,
             id: user._id
-        }, process.env.JWT_SECRET);
+        }, process.env.JWT_SECRET, {expiresIn: 60 * 60});
     
         res.cookie('auth-cookie', token, { httpOnly: true, secure: true }); 
     
