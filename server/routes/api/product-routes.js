@@ -15,6 +15,6 @@ router.put("/:id", productController.updateProductById);
 router.get("/", productController.getAllProducts);
 
 // DELETE a product by ID
-router.delete("/:id", productController.deleteProduct);
+router.delete("/:id", productController.deleteProductById);
 
 module.exports = router;
