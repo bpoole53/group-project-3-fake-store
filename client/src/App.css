@@ -110,10 +110,11 @@ body {
   z-index: -1;
   width: 100%;
   object-fit: cover;
+  background-color: rbg (26, 30, 36, .9) ;
 }
 
-.main{
+.hero-content {
   margin-top: 100px;
-  background-color: rbg (26, 30, 36, .5);
+  background-color: rbg (26, 30, 36, .9);
   color: white;
 }
