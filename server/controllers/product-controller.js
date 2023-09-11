@@ -18,7 +18,7 @@ const productController = {
   updateProductById: async (req, res) => {
     const { id } = req.params;
     try {
-      const updatedProduct = await Product.findByIdUpdate(id, req.body, { new: true });
+      const updatedProduct = await Product.findByIdAndUpdate(id, req.body, { new: true });
       if (!updatedProduct) {
         return res.status(404).json({ status: "error", msg: "Product not found" });
       }
@@ -39,10 +39,10 @@ const productController = {
     }
   },
 
-  deleteProduct: async (req, res) => {
+  deleteProductById: async (req, res) => {
     const { id } = req.params;
     try {
-      const deletedProduct = await Product.findByIdDelete(id);
+      const deletedProduct = await Product.findByIdAndDelete(id);
       if (!deletedProduct) {
         return res.status(404).json({ status: "error", msg: "Product not found" });
       }
