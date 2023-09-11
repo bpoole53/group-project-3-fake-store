@@ -8,7 +8,7 @@ const {
   remove 
 } = require('../../controllers/user-controller');
 
-router.post("/", async (req, res) => {
+router.post("/signup", async (req, res) => {
   try {
     const payload = await createUser(req, res); 
     return res.status(201).json({ status: "success", payload }); 
