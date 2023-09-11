@@ -23,11 +23,19 @@ export default function Hero () {
   const videoRef = useRef(null);
  
 
+
   useEffect(() => {
     let currentVideoIndex = 0;
 
-    const playNextVideo = () => {
-      currentVideoIndex = (currentVideoIndex +1) % videoSources.length;
+    const videoElement = videoRef.current;
+
+    function playNextVideo () {
+    if (currentVideoIndex < videoSources.length) {
+      videoElement.src = videoSources[currentVideoIndex];
+      videoElement.play().catch((error) => {
+        console.error("error on play", error);
+        })
+    }
       videoRef.current.src = videoSources[currentVideoIndex];
       videoRef.current.play();
     };
@@ -48,20 +56,12 @@ export default function Hero () {
   
   return (
     <>
+    <div className= "main">
        <div className="hero">
       <video ref={videoRef} autoPlay muted loop>
         <source src={videoSources[0]} type="video/mp4" />
       </video>
-      </div>
-      
-
-  
-
-
-
-
-      {/* <div className="hero min-h-screen" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80)'}}>
-        <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
@@ -69,7 +69,9 @@ export default function Hero () {
           <button className="btn btn-primary" onClick={sendtoProducts}>Shop All</button>
         </div>
        </div>
-      </div> */}
+      
+    </div>
+    </div>
     </>
   )
 }
