@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../App.css'
+// import '../App.css'
 
 export default function Login(){
     const [formData, setFormData] = useState({email: '', password: ''})
@@ -11,7 +11,7 @@ export default function Login(){
 
       const handleFormSubmit = async(e) => {
         e.preventDefault()
-        const query = await fetch("/api/auth/verify", {
+        const query = await fetch("/api/auth/login", {
           method: "POST",
           body: JSON.stringify(formData),
           headers: {
@@ -31,18 +31,18 @@ export default function Login(){
         }
       }
 
-    async function login(e){
-        e.preventDefault();
-        const query = await fetch('/api/user/auth', {
-            method: 'POST',
-            body: JSON.stringify(formData),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        const result = await query.json()
-        // implement logic for success or fail
-    }
+    // async function login(e){
+    //     e.preventDefault();
+    //     const query = await fetch('/api/user/auth', {
+    //         method: 'POST',
+    //         body: JSON.stringify(formData),
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         }
+    //     })
+    //     const result = await query.json()
+    //     // implement logic for success or fail
+    // }
 
     return (
         <>
@@ -54,16 +54,16 @@ export default function Login(){
                 name="email"
                 className="input input-bordered w-full max-w-xs justify-center"
                 value={formData.email}
-                onchange={handleInputChange}        
+                onChange={handleInputChange}        
                 />
 
                 <input 
                 type="password" 
                 placeholder="Password" 
-                className="input input-bordered w-full max-w-xs justify-center"
                 name="password"
+                className="input input-bordered w-full max-w-xs justify-center"                
                 value={formData.password}
-                onchange={handleInputChange} 
+                onChange={handleInputChange} 
                 />
                 <button className="btn justify-center" onClick={handleFormSubmit}>Login</button>
                 <a className="link justify-center" href="/signup">Don't Have an Account? Click Here to Sign Up Instead!</a>
@@ -71,12 +71,12 @@ export default function Login(){
 
             { loginResult === "fail" && (
             <div className="alert alert-danger" role="alert">
-               Signup failed!
+              Login failed!
             </div>
             )}
             { loginResult === "success" && (
             <div className="alert alert-success" role="alert">
-              Signup successful!
+              Login successful!
             </div> 
             )}
         </>
