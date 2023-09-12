@@ -23,10 +23,9 @@ export default function Footer () {
 
   return (
    <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-    <nav className="grid grid-flow-col gap-4">
+    <nav className="grid grid-flow-col gap-2">
       <a className="link link-hover" href="/about">About us</a> <span/>
-    </nav> 
-    <nav><img className="grid grid=flow-col gap-4" src="/StyleShopLogo.png" heighth = "20%" width= "20%"/></nav>
+    </nav>
     <nav>
       
     <div className="form-control">
@@ -43,6 +42,7 @@ export default function Footer () {
 
     </nav> 
     <aside>
+    <img className="img" src="/Hull&DeckBlue.png" heighth = "20%" width= "20%" border-radius ="75px" />
       <p>Copyright © 2023 - All right reserved by Hull & Deck Inc</p>
     </aside>
    </footer>
