@@ -5,7 +5,6 @@ const { Schema, model } = require('mongoose');
 const bcrypt = require("bcrypt")
 
 const userSchema = new Schema({
-  _id: Schema.Types.ObjectId,
   fname: { 
     type: String, 
     required: true,
@@ -26,8 +25,8 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: 6
-  }
+    minlength: 6,
+  },
 });
 
 userSchema.method("verify", async function(pw){
@@ -36,7 +35,7 @@ userSchema.method("verify", async function(pw){
 
 userSchema.pre("save", async function(next){
   if (!this._id) {
-    this._id = new mongoose.Types.ObjectId(); 
+    this._id = new Schema.Types.ObjectId(); 
   }
   this.password = await bcrypt.hash(this.password, 10)
   next()

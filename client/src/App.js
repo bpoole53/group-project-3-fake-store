@@ -41,7 +41,7 @@ function App() {
     <AppProvider>
       <div>
         <Header/>
-
+        <div class="inside-body">
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
@@ -55,7 +55,7 @@ function App() {
             <Route path='/productpage' element={<ProductPage/>}/>
           </Routes>      
         </BrowserRouter>
-
+        </div>
         <Footer/>
       </div>
     </AppProvider>
