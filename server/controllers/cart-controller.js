@@ -1,6 +1,6 @@
 
 
-const Cart = require('../models/Cart')
+const Cart = require('../models/User')
 
 const cartController = {
 
