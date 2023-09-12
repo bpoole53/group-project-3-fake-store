@@ -1,73 +1,28 @@
-const router = require('express').Router();
-const { 
-  find,
-  findById,
-  createUser,
-  update,
-  updateById,
-  remove,
-  verifyUser 
-} = require('../../controllers/user-controller');
-
-// router.post("/", async (req, res) => {
-//   try {
-//     await createUser(req, res); 
-//   } catch (err) {
-//     return res.status(400).json({ status: "error", msg: err.message }); 
-//   }
-// });
-
-router.route("/").post(createUser);
-
-router.get("/", async (req, res) => {
-  try {
-    const payload = await find(req.query)
-    return res.status(200).json({ status: "success", payload })
-  } catch(err) {
-    return res.status(400).json({ status: "error", msg })
-  }
-})
-
-router.get("/:id", async (req, res) => {
-  const id = req.params.id
-  try {
-    const payload = await findById(id)
-    return res.status(200).json({ status: "success", payload })
-  } catch(err) {
-    return res.status(400).json({ status: "error", msg })
-  }
-})
 
 
+const express = require('express');
+const router = express.Router();
+const userController = require('../../controllers/user-controller');
 
-router.put("/", async (req, res) => {
-  try {
-    const payload = await update(req.query, req.body)
-    return res.status(200).json({ status: "success", payload })
-  } catch(err) {
-    return res.status(400).json({ status: "error", msg })
-  }
-})
+// POST Create a new user
+router.post('/', userController.createUser);
 
-router.put("/:id", async (req, res) => {
-  const id = req.params.id
-  try {
-    const payload = await updateById(id, req.body)
-    return res.status(200).json({ status: "success", payload })
-  } catch(err) {
-    return res.status(400).json({ status: "error", msg })
-  }
-})
+// POST Authenticate a user
+router.post('/auth', userController.authUser);
 
-router.delete("/:id", async (req, res) => {
-  const id = req.params.id
-  try {
-    const payload = await remove(id)
-    return res.status(200).json({ status: "success", payload })
-  } catch(err) {
-    return res.status(400).json({ status: "error", msg })
-  }
-})
+// GET Verify user authentication
+router.get('/verify', userController.verifyUser);
 
+// PUT Update a user by ID
+router.put('/:id', userController.updateUserById);
+
+// GET all users
+router.get('/', userController.getAllUsers);
+
+// DELETE a user by ID
+router.delete('/:id', userController.deleteUserById);
+
+// GET a single user by ID
+router.get('/:id', userController.getUserById);
 
 module.exports = router;
