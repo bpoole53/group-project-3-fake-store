@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import '../App.css'
 
 export default function Login(){
     const [formData, setFormData] = useState({email: '', password: ''})
@@ -30,19 +29,6 @@ export default function Login(){
           }
         }
       }
-
-    // async function login(e){
-    //     e.preventDefault();
-    //     const query = await fetch('/api/user/auth', {
-    //         method: 'POST',
-    //         body: JSON.stringify(formData),
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         }
-    //     })
-    //     const result = await query.json()
-    //     // implement logic for success or fail
-    // }
 
     return (
         <>
