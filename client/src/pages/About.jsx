@@ -12,12 +12,12 @@ return(<>
 					<h1 className="text-5xl font-bold text-center">Our Mission:</h1>
 					<p className="py-6 text-xl"> To provide the most reliable and intuitive watercraft available and are commit to be the best partner for our stakeholders.</p>
 
-					<h2 className="text-3xl font-bold text-center">Our Vision:</h2>
+					<h2 className="text-3xl font-bold">Our Vision:</h2>
 					<p className="py-6 text-xl">
 					Delighting customers by providing the best designed and viable solutions for the world's most demanding environments.
 					</p>
 
-					<h1 className="text-3xl font-bold text-center">Our Core Values:</h1>
+					<h1 className="text-3xl font-bold ">Our Core Values:</h1>
 
 					<h2 className="text-3xl font-bold">Integrity</h2>
 						<p className="py-6 text-xl"> We will conduct ourselves at the highest level of ethical standards. We do what we say, and say what we do.</p>
