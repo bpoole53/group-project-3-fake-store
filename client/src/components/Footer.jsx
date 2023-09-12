@@ -43,7 +43,7 @@ export default function Footer () {
 
     </nav> 
     <aside>
-      <p>Copyright © 2023 - All right reserved by Style Shop Inc</p>
+      <p>Copyright © 2023 - All right reserved by Hull & Deck Inc</p>
     </aside>
    </footer>
   )
