@@ -22,31 +22,27 @@ export default function Footer () {
 
 
   return (
-   <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-    <nav className="grid grid-flow-col gap-4">
-      <a className="link link-hover" href="/about">About us</a> <span/>
-    </nav> 
-    <nav><img className="grid grid=flow-col gap-4" src="/StyleShopLogo.png" heighth = "20%" width= "20%"/></nav>
-    <nav>
-      
-    <div className="form-control">
-      <label className="label cursor-pointer">
-        <span className="label-text">Dark Mode</span> 
-        <input 
-          type="checkbox" 
-          className="toggle" 
-          checked={theme === "light" ? false === "dark" : true } 
-          onChange={handleThemeChange}
-        />
-      </label>
-    </div>
-
-    </nav> 
-    <aside>
-      <p>Copyright © 2023 - All right reserved by Hull & Deck Inc</p>
-    </aside>
-   </footer>
-  )
-}
-
-
+    <footer className="footer footer-center p-3 bg-base-200 text-base-content rounded">
+       <nav className=" grid-flow-row-dense gap-2">
+        <a className="link link-hover center" href="/about">About us</a> <span/>
+       </nav>
+      <nav>
+       <nav className="form-control">
+       <label className="label cursor-pointer">
+         <span className="label-text">Dark Mode&nbsp;&nbsp; </span> 
+         <input 
+           type="checkbox" 
+           className="toggle" 
+           checked={theme === "light" ? false === "dark" : true } 
+           onChange={handleThemeChange}
+         />
+       </label>
+       </nav>
+      </nav> 
+       <aside>
+      <img className="footerimg" src="/Hull&DeckBlu.png" heighth ="30%" width= "30%" border-radius ="75px" />
+       <p>Copyright © 2023 - All right reserved by Hull & Deck Inc</p>
+      </aside>
+    </footer>
+   )
+ }
