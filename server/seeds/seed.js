@@ -5,6 +5,7 @@ const {Cart,Product,User} = require('../models')
 
 const productData = require('./productData.json')
 const userData = require('./userData.json')
+const cartData = require('./cartData.json'); 
 
 db.once('open', async () => {
     await dbClean('Product', 'products');
@@ -17,6 +18,8 @@ db.once('open', async () => {
     await User.insertMany(userData);
     console.log('Users seeded!');
 
+    await Cart.insertMany(cartData);
+    console.log('Carts seeded!')
     
     process.exit(0);
   });

@@ -10,7 +10,7 @@ export default function Signup(){
 
       const handleFormSubmit = async(e) => {
         e.preventDefault()
-        const query = await fetch("/api/auth/register", {
+        const query = await fetch("/api/user", {
           method: "POST",
           body: JSON.stringify(formData),
           headers: {
@@ -20,6 +20,7 @@ export default function Signup(){
     
         if( !query.ok ) {
           setSignupResult("fail")
+          console.log(query)
         } else {
           const result = await query.json()
           if( result.status === "success" && result.payload ){

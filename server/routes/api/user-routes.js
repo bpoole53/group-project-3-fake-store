@@ -5,18 +5,19 @@ const {
   createUser,
   update,
   updateById,
-  remove 
+  remove,
+  verifyUser 
 } = require('../../controllers/user-controller');
 
-router.post("/", async (req, res) => {
-  try {
-    const payload = await createUser(req, res); 
-    return res.status(201).json({ status: "success", payload }); 
-  } catch (err) {
-    return res.status(400).json({ status: "error", msg: err.message }); 
-  }
-});
+// router.post("/", async (req, res) => {
+//   try {
+//     await createUser(req, res); 
+//   } catch (err) {
+//     return res.status(400).json({ status: "error", msg: err.message }); 
+//   }
+// });
 
+router.route("/").post(createUser);
 
 router.get("/", async (req, res) => {
   try {
