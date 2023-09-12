@@ -1,13 +1,64 @@
+
 body {
   margin: 0;
   padding: 0;
-  height: 1000px;
+  height: 100vh;
   background-color: rgb(170, 170, 170);
 }
+
+/* Header */
 
 .cartNav {
   margin-right: 15px;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 200px;
+  padding: 0;
+  background-color: rbg (26, 30, 36);
+}
+
+
+/* Individual Product Page */
+
+
+.product-page-container{
+  display: flex;
+  align-items: center;
+  margin: 100px;
+}
+
+.product-page-title {
+  color: black;
+  font-size: 40px;
+}
+
+.product-page-text {
+  color: black;
+}
+
+.product-page-button {
+  background-color: black;
+  margin-top: 10px;
+}
+
+.product-text-container {
+  margin-left: 20px;
+}
+
+.productTitle {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Products Result Page */
 
 .productBtn {
   background-color: rgb(26, 30, 36);
@@ -49,20 +100,7 @@ body {
   font-weight: bold;
 }
 
-.productTitle {
-  color: black;
-  text-align: center;
-  font-size: 50px;
-}
-
-.footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  margin-bottom: 0;
-  height: 350px;
-  background-color: rbg (26, 30, 36);
-}
+/* Login and Signup Pages */
 
 .loginForm h1, .signupForm h1 {
   color: black;
@@ -80,26 +118,13 @@ body {
   color: black;
 }
 
-.product-page-container{
-  display: flex;
-  align-items: center;
-  margin: 100px;
+/* Checkout Page */
+
+.checkout-form-holder {
+  height: fit-content;
+  width: 600px;
 }
 
-.product-page-title {
-  color: black;
-  font-size: 40px;
-}
+.shipping-info-holder {
 
-.product-page-text {
-  color: black;
-}
-
-.product-page-button {
-  background-color: black;
-  margin-top: 10px;
-}
-
-.product-text-container {
-  margin-left: 20px;
 }
