@@ -12,6 +12,11 @@ const productSchema = new Schema({
     type: Number,
     required: true,
   },
+  category: {
+    type: String,
+    enum: ['Large Water Vessel', 'Small Water Vessel'],
+    required: true,
+  },
   photo: {
     data: Buffer,
     contentType: String,
