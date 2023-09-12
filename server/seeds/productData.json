@@ -5,6 +5,7 @@
       "name": "Sailboat",
       "description": "A beautiful sailboat for leisurely cruising.",
       "price": 35000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -14,6 +15,7 @@
       "name": "Fishing Boat",
       "description": "Perfect for a day of fishing on the lake.",
       "price": 28000,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -22,7 +24,8 @@
     {
       "name": "Luxury Yacht",
       "description": "Luxury yacht with all the amenities.",
-      "price": 120000,
+      "price": 1200000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -31,7 +34,8 @@
     {
       "name": "Versatile Canoe",
       "description": "A versatile canoe for outdoor enthusiasts.",
-      "price": 800,
+      "price": 500,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -40,7 +44,8 @@
     {
       "name": "Compact Kayak",
       "description": "A compact kayak for solo adventures.",
-      "price": 500,
+      "price": 400,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -50,6 +55,7 @@
       "name": "Powerful Speedboat",
       "description": "A powerful speedboat for water sports.",
       "price": 55000,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -58,7 +64,8 @@
     {
       "name": "Massive Cruise Ship",
       "description": "A massive cruise ship for unforgettable vacations.",
-      "price": 1000000,
+      "price": 3000000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -68,6 +75,7 @@
       "name": "Reliable Ferry",
       "description": "A reliable ferry for transportation services.",
       "price": 500000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -76,16 +84,18 @@
     {
       "name": "Comfortable Pontoon Boat",
       "description": "A comfortable pontoon boat for family outings.",
-      "price": 18000,
+      "price": 30000,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
       }
     },
     {
-      "name": "Thrilling Jet Ski",
-      "description": "A thrilling jet ski for water adventures.",
-      "price": 4500,
+      "name": "Electric Speed Boat",
+      "description": "A High Speed boat that does not require gasoline.",
+      "price": 50000,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -95,6 +105,7 @@
       "name": "Cozy Houseboat",
       "description": "A cozy houseboat for living on the water.",
       "price": 75000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -103,16 +114,18 @@
     {
       "name": "Small Dinghy",
       "description": "A small dinghy for short trips and fishing.",
-      "price": 1200,
+      "price": 800,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
       }
     },
     {
-      "name": "Ski Boat",
-      "description": "A ski boat for high-speed water sports.",
-      "price": 32000,
+      "name": "Jet Ski",
+      "description": "A jet ski for high-speed water sports.",
+      "price": 2200,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -122,6 +135,7 @@
       "name": "Inflatable Raft",
       "description": "An inflatable raft for river adventures.",
       "price": 350,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -131,6 +145,7 @@
       "name": "Stable Catamaran",
       "description": "A stable catamaran for group sailing.",
       "price": 55000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -139,7 +154,8 @@
     {
       "name": "Classic Rowboat",
       "description": "A classic rowboat for peaceful lake excursions.",
-      "price": 600,
+      "price": 800,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -148,7 +164,8 @@
     {
       "name": "Submarine",
       "description": "A submarine for underwater exploration.",
-      "price": 800000,
+      "price": 2000000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -157,7 +174,8 @@
     {
       "name": "Hovercraft",
       "description": "A hovercraft for versatile water transportation.",
-      "price": 100000,
+      "price": 150000,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
@@ -166,16 +184,18 @@
     {
       "name": "Sturdy Tugboat",
       "description": "A sturdy tugboat for maritime operations.",
-      "price": 40000,
+      "price": 100000,
+      "category": "Large Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
       }
     },
     {
-      "name": "Compact Personal Watercraft",
-      "description": "A compact personal watercraft for fun on the water.",
+      "name": "Fishing Kayak",
+      "description": "A fishing kayak for solo adventures.",
       "price": 2500,
+      "category":"Small Water Vessel",
       "image": {
         "data": "",
         "contentType": ""
