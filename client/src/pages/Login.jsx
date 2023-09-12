@@ -1,8 +1,35 @@
 import { useState } from "react";
-import LoginForm from "../components/LoginForm";
+import '../App.css'
 
 export default function Login(){
     const [formData, setFormData] = useState({email: '', password: ''})
+    const [loginResult, setLoginResult ] = useState("")
+
+    const handleInputChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+      }
+
+      const handleFormSubmit = async(e) => {
+        e.preventDefault()
+        const query = await fetch("/api/auth/verify", {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+    
+        if( !query.ok ) {
+          setLoginResult("fail")
+          console.log(query)
+        } else {
+          setLoginResult("success")
+          const result = await query.json()
+          if( result.status === "success" && result.payload ){
+            window.location.href = "/"
+          }
+        }
+      }
 
     async function login(e){
         e.preventDefault();
@@ -19,7 +46,39 @@ export default function Login(){
 
     return (
         <>
-         <LoginForm/>
+            <div className="loginForm justify-center">
+                <h1>Login Below:</h1>
+                <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                className="input input-bordered w-full max-w-xs justify-center"
+                value={formData.email}
+                onchange={handleInputChange}        
+                />
+
+                <input 
+                type="password" 
+                placeholder="Password" 
+                className="input input-bordered w-full max-w-xs justify-center"
+                name="password"
+                value={formData.password}
+                onchange={handleInputChange} 
+                />
+                <button className="btn justify-center" onClick={handleFormSubmit}>Login</button>
+                <a className="link justify-center" href="/signup">Don't Have an Account? Click Here to Sign Up Instead!</a>
+            </div>
+
+            { loginResult === "fail" && (
+            <div className="alert alert-danger" role="alert">
+               Signup failed!
+            </div>
+            )}
+            { loginResult === "success" && (
+            <div className="alert alert-success" role="alert">
+              Signup successful!
+            </div> 
+            )}
         </>
     )
 
