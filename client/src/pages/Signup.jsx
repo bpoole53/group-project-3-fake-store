@@ -20,6 +20,7 @@ export default function Signup(){
     
         if( !query.ok ) {
           setSignupResult("fail")
+          console.log(query)
         } else {
           const result = await query.json()
           if( result.status === "success" && result.payload ){

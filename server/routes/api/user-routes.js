@@ -9,14 +9,15 @@ const {
   verifyUser 
 } = require('../../controllers/user-controller');
 
-router.post("/", async (req, res) => {
-  try {
-    await createUser(req, res); 
-  } catch (err) {
-    return res.status(400).json({ status: "error", msg: err.message }); 
-  }
-});
+// router.post("/", async (req, res) => {
+//   try {
+//     await createUser(req, res); 
+//   } catch (err) {
+//     return res.status(400).json({ status: "error", msg: err.message }); 
+//   }
+// });
 
+router.route("/").post(createUser);
 
 router.get("/", async (req, res) => {
   try {
