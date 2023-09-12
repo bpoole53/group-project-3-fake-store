@@ -52,7 +52,7 @@ function Navigation() {
         </div>
       </div>
 
-    </>
+ 
 
 
       <a className="btn btn-ghost normal-case text-xl center" href="/">Hull & Deck
