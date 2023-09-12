@@ -55,7 +55,7 @@ function Navigation() {
       <a className="btn btn-ghost normal-case text-xl center" href="/">Hull & Deck
       <img className="image" src="/Hull&DeckBlue.png" heighth = "5%" width= "5%" border-image= 'none' />
       </a>
-    </div>
+
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
         <li><a href="/about">About</a></li>
@@ -76,7 +76,6 @@ function Navigation() {
       <a href="/cart" className="cartNav">Cart</a>
       <a className="btn" href="/login">Login</a>
     </div>
-   </div>
    </>
 
   )
