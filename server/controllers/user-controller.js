@@ -6,6 +6,8 @@ require('dotenv').config()
 
 
 const userController = {
+
+
     async createUser(req, res) {
         try {
             const user = await User.create(req.body);
@@ -26,6 +28,7 @@ const userController = {
             return res.status(400).json({ status: 'error', msg: `Error creating user: ${err.message}` });
         }
     },
+
 
     async authUser(req, res) {
         let user;
@@ -59,6 +62,7 @@ const userController = {
         return res.status(200).json({ status: 'success', payload: authenticatedUser });
     },
 
+
     async verifyUser(req, res) {
         const cookie = req.cookies["auth-cookie"];
     
@@ -88,6 +92,27 @@ const userController = {
         }
     },
 
-}
+
+
+    async updateUserById(req, res) {
+        
+     },
+    
+
+    async getAllUsers(req, res) {
+        
+     },
+
+
+    async deleteUserById(req, res) {
+        
+     },
+    
+     
+    async getUserById(req, res) {
+        
+     },
+    
+};
 
 module.exports = userController;

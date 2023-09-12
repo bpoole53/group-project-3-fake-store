@@ -26,8 +26,8 @@ function Navigation() {
               <a className="btn searchBtn" type="submit" href="/products">Search</a>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl" href="/">Hull & Deck
-
+          <a className="btn btn-ghost normal-case text-xl center" href="/">Hull & Deck
+            <img className="image" src="/Hull&DeckBlu.png" heighth = "5%" width= "5%" border-image= 'none' />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -51,37 +51,7 @@ function Navigation() {
           <a className="btn" href="/login">Login</a>
         </div>
       </div>
-
- 
-
-
-      <a className="btn btn-ghost normal-case text-xl center" href="/">Hull & Deck
-      <img className="image" src="/Hull&DeckBlue.png" heighth = "5%" width= "5%" border-image= 'none' />
-      </a>
-
-    <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1">
-        <li><a href="/about">About</a></li>
-        <li tabIndex={0}>
-          <details>
-            <summary>Shop</summary>
-            <ul className="p-2">
-              <li><a>Category 1</a></li>
-              <li><a>Category 2</a></li>
-            </ul>
-          </details>
-        </li>
-        <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
-        <a className="btn searchBtn" type="submit" href="/products">Search</a>
-      </ul>
-    </div>
-    <div className="navbar-end">
-      <a href="/cart" className="cartNav">Cart</a>
-      <a className="btn" href="/login">Login</a>
-    </div>
-   </>
-
-
+    </>
   )
 }
 
