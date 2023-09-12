@@ -127,16 +127,31 @@
 
 /* Checkout Page */
 
-.checkout-form-holder {
+
+.checkout-form-holder, .payment-form-holder {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   height: fit-content;
-  width: 600px;
 }
 
+.checkout-form-holder {
+  width: 600px;
+}
 
 .product-text-container {
   margin-left: 20px;
 }
 
+.billing-info-holder, .payment-form  {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+/*      */
 
 #video {
   position: fixed;
