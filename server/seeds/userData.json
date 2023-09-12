@@ -3,19 +3,19 @@
     "fname":"first",
     "lname":"last",
     "email":"lorem@mail.com",
-    "password":"123"
+    "password":"123456"
 },
 {
     "fname":"insert first name",
     "lname":"insert last name",
     "email":"ispem@mail.com",
-    "password":"321"
+    "password":"321456"
 },
 {
     "fname":"lorem",
     "lname":"ispum",
     "email":"loremispum@mail.com",
-    "password":"213"
+    "password":"213456"
 }
 
 ]
