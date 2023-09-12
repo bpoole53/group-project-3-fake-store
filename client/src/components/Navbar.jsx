@@ -25,8 +25,8 @@ function Navigation() {
           <a className="btn searchBtn" type="submit" href="/products">Search</a>
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl" href="/">Hull & Deck
-      
+      <a className="btn btn-ghost normal-case text-xl center" href="/">Hull & Deck
+      <img className="image" src="/Hull&DeckBlue.png" heighth = "5%" width= "5%" border= 'none' />
       </a>
     </div>
     <div className="navbar-center hidden lg:flex">

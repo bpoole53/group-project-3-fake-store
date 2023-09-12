@@ -60,8 +60,9 @@ body {
   width: 100%;
   bottom: 0;
   margin-bottom: 0;
-  height: 350px;
-  background-color: rbg (26, 30, 36);
+  height: 200px;
+  font-size: 100%;
+  /* background-color: rgb(26, 30, 36); */
 }
 
 .loginForm h1, .signupForm h1 {
@@ -110,12 +111,36 @@ body {
   z-index: -1;
   width: 100%;
   object-fit: cover;
-  background-color: rbg (26, 30, 36, .9) ;
+  background-color: rgb(26, 30, 36, .9) ;
 }
 
 .hero-content {
   margin-top: 100px;
-  background-color: rbg (26, 30, 36, .9);
+  background-color: rgb(26, 30, 36, .4);
   color: white;
+  border-radius: 25px;
 }
 
+
+img {
+  border-radius: 75px;
+  border-color:rgb(170, 170, 170);
+  border-width: 5px;
+  .image{
+    border: none;
+    justify-content: center;
+  }
+}
+
+
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+aside{
+  padding-bottom: 10px;
+}
