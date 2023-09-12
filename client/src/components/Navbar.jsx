@@ -52,6 +52,9 @@ function Navigation() {
         </div>
       </div>
 
+    </>
+
+
       <a className="btn btn-ghost normal-case text-xl center" href="/">Hull & Deck
       <img className="image" src="/Hull&DeckBlue.png" heighth = "5%" width= "5%" border-image= 'none' />
       </a>
@@ -77,6 +80,7 @@ function Navigation() {
       <a className="btn" href="/login">Login</a>
     </div>
    </>
+
 
   )
 }
