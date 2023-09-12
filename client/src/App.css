@@ -1,8 +1,15 @@
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background-color: rgb(170, 170, 170);
+} */
+
+.inside-body{
+  margin: 0;
+  padding: 0;
+  height: 645px;
   background-color: rgb(170, 170, 170);
 }
 
@@ -125,6 +132,21 @@ body {
   width: 600px;
 }
 
-.shipping-info-holder {
 
+.product-text-container {
+  margin-left: 20px;
 }
+
+
+#video {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  background-color: rbg (26, 30, 36, .9) ;
+}
+
+.hero-content {
+  margin-top: 100px;
+  background-color: rbg (26, 30, 36, .9);
+  color: white;
