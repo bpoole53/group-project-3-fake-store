@@ -107,7 +107,25 @@
   font-weight: bold;
 }
 
+
+.productTitle {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 200px;
+  font-size: 100%;
+  /* background-color: rgb(26, 30, 36); */
+}
+
 /* Login and Signup Pages */
+
 
 .loginForm h1, .signupForm h1 {
   color: black;
@@ -143,11 +161,37 @@
   z-index: -1;
   width: 100%;
   object-fit: cover;
-  background-color: rbg (26, 30, 36, .9) ;
+  background-color: rgb(26, 30, 36, .9) ;
 }
 
 .hero-content {
   margin-top: 100px;
-  background-color: rbg (26, 30, 36, .9);
+  background-color: rgb(26, 30, 36, .4);
   color: white;
+  border-radius: 25px;
+}
+
+
+.footerimg {
+  border-radius: 75px;
+  border-color:rgb(170, 170, 170);
+  border-width: 5px;
+}
+
+img {
+  border-radius: 25px;
+  border-color:rgb(170, 170, 170);
+  border-width: .5px;
+}
+
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+aside{
+  padding-bottom: 10px;
 }
