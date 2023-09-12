@@ -126,10 +126,9 @@ img {
   border-radius: 75px;
   border-color:rgb(170, 170, 170);
   border-width: 5px;
-.image{
-    border: 0px;
+}
+.img image{
     justify-content: center;
-  }
 }
 
 
