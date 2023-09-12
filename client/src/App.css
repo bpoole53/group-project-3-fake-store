@@ -126,8 +126,8 @@ img {
   border-radius: 75px;
   border-color:rgb(170, 170, 170);
   border-width: 5px;
-  .image{
-    border: none;
+.image{
+    border: 0px;
     justify-content: center;
   }
 }
