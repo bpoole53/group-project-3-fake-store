@@ -1,21 +1,26 @@
 [
 {
-    "fname":"first",
-    "lname":"last",
-    "email":"lorem@mail.com",
-    "password":"123"
+    "fname":"John",
+    "lname":"Doe",
+    "email":"JohnDoe@mail.com",
+    "password":"JohnDoeeee"
 },
 {
-    "fname":"insert first name",
-    "lname":"insert last name",
-    "email":"ispem@mail.com",
-    "password":"321"
+    "fname":"Alexander",
+    "lname":"Johnson",
+    "email":"AlexJay@mail.com",
+    "password":"AlexJayJay"
 },
 {
-    "fname":"lorem",
-    "lname":"ispum",
-    "email":"loremispum@mail.com",
-    "password":"213"
+    "fname":"Noah",
+    "lname":"Heath",
+    "email":"HeathNoah@mail.com",
+    "password":"Noahhh"
+},
+{
+    "fname":"Test",
+    "lname":"Test",
+    "email":"Test@mail.com",
+    "password":"password"
 }
-
 ]
