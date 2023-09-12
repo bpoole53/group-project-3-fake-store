@@ -1,4 +1,6 @@
 import '../App.css'
+import React, {useRef, useEffect} from 'react';
+
 
 export default function Hero () {
 
@@ -6,18 +8,67 @@ export default function Hero () {
     window.location.replace('/products')
   }
 
+  const videoSources = [
+    '/video1.mp4',
+    '/video2.mp4',
+    '/video3.mp4',
+    '/video4.mp4'
+  ];
+
+  videoSources.forEach((videoSrc) => {
+    const video = new Audio(videoSrc);
+    video.preload = 'auto';
+    video.load();
+  });
+  const videoRef = useRef(null);
+ 
+
+
+  useEffect(() => {
+    let currentVideoIndex = 0;
+
+    const videoElement = videoRef.current;
+
+    function playNextVideo () {
+    if (currentVideoIndex < videoSources.length) {
+      videoElement.src = videoSources[currentVideoIndex];
+      videoElement.play().catch((error) => {
+        console.error("error on play", error);
+        })
+    }
+      videoRef.current.src = videoSources[currentVideoIndex];
+      videoRef.current.play();
+    };
+
+    videoRef.current.addEventListener('ended', playNextVideo);
+
+    videoRef.current.src = videoSources[currentVideoIndex];
+    videoRef.current.play();
+
+    return ()  => {
+      videoRef.current.removeEventListener('ended', playNextVideo);
+    };
+  },[videoSources]);
+
+
+
+
+  
   return (
     <>
-      <div className="hero min-h-screen" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80)'}}>
-        <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero">
+      <video ref={videoRef} autoPlay muted loop>
+        <source src={videoSources[0]} type="video/mp4" />
+      </video>
+      <div className="hero-overlay bg-opacity-60"/>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-          <button className="btn btn-primary" onClick={sendtoProducts}>Shop All</button>
-        </div>
-       </div>
+          <h1 className="mb-5 text-5xl font-bold">The waters are calling...</h1>
+          <p className="mb-5">From beginning design to finished product, Hull & Deck ensures that our watercraft are equipped with the highest quality building products available. From personal watercraft to exquisite yachts, our crafts are guaranteed to handle any body of water and last over time. Whether you are looking for a shipwright to build your dream custom boat or would like a pre-built vessel, we have you covered! </p>
+          <button className="btn btn-primary" onClick={sendtoProducts}>Shop All Watercraft</button>
       </div>
+      </div>
+    </div>
     </>
   )
-}
+  }
