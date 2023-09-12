@@ -42,7 +42,7 @@ export default function Footer () {
 
     </nav> 
     <aside>
-    <img className="img" src="/Hull&DeckBlue.png" heighth = "30%" width= "30%" border-radius ="75px" />
+    <img className="footerimg" src="/Hull&DeckBlue.png" heighth = "30%" width= "30%" border-radius ="75px" />
       <p>Copyright © 2023 - All right reserved by Hull & Deck Inc</p>
     </aside>
    </footer>

@@ -122,15 +122,17 @@ body {
 }
 
 
-img {
+.footerimg {
   border-radius: 75px;
   border-color:rgb(170, 170, 170);
   border-width: 5px;
 }
-.img image{
-    justify-content: center;
-}
 
+img {
+  border-radius: 25px;
+  border-color:rgb(170, 170, 170);
+  border-width: .5px;
+}
 
 
 html, body { height: 100%;}
