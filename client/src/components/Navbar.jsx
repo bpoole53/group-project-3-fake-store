@@ -28,8 +28,8 @@ function Navigation() {
           <li>
             <a href="/products">Shop</a>
             <ul className="p-2">
-                  <li><a href="/products/small-water-vessels">Small water vessels</a></li>
-                  <li><a href="/products/large-water-vessels">Large water vessels</a></li>
+                  <li><a href="/products/small-water-vessels">Small Water Vessels</a></li>
+                  <li><a href="/products/large-water-vessels">Large Water vessels</a></li>
             </ul>
           </li>
           <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
@@ -47,8 +47,8 @@ function Navigation() {
           <details>
             <summary>Shop</summary>
             <ul className="p-2">
-                  <li><a href="/products/small-water-vessels">Small water vessels</a></li>
-                  <li><a href="/products/large-water-vessels">Large water vessels</a></li>
+                  <li><a href="/products/small-water-vessels">Small Water Vessels</a></li>
+                  <li><a href="/products/large-water-vessels">Large Water Vessels</a></li>
             </ul>
           </details>
         </li>
