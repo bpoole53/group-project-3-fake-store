@@ -10,6 +10,9 @@ const cartController = require('../../controllers/cart-controller')
 // POST add product to the user's cart
 router.post('/:userId/', cartController.addProductToUserCart)
 
+// GET a users cart
+router.get('/:userId', cartController.getUserCart);
+
 // DELETE the entire cart for a user
 router.delete('/:userId', cartController.deleteUserCart);
 
