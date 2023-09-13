@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 
-async function verifyUser(){
+async function userAuth(){
     if(Cookies.get('auth-cookie')){
       try {
         const query = await fetch('api/user/verify', {
@@ -10,19 +10,20 @@ async function verifyUser(){
             'Content-Type': 'application/json'
           }
         })
+
         const result = await query.json()
-        console.log(result)
-        if (result?.status === 'success') {
-          return true;  // logic for successful authentication
+  
+        if (result && result?.status === 'success') {
+          return {result} // logic for successful authentication
         } else {
-          return false;
+          return null;
         }
       } catch(err){
-        return false;
+        return null;        
       }
     } else {
       return null// implement logic for non-authenticated user
     }
   }
 
-  export default verifyUser;
+  export default userAuth;
