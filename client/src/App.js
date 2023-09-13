@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-import Cookies from 'js-cookie'
 import { AppProvider } from './utils/AppContext'
 import {Home, Login, Signup,Products,Profile,Cart,About,Checkout} from './pages'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
@@ -9,51 +7,13 @@ import Hero from './components/Hero'
 import ProductPage from "./pages/ProductPage"
 
 
-async function verifyUser(){
-  if(Cookies.get('auth-cookie')){
-    try {
-      const query = await fetch('api/user/verify', {
-        method: "POST",
-        body: '',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-      const result = await query.json()
-      console.log(result)
-      if (result?.status === 'success') {
-        return true;  // logic for successful authentication
-      } else {
-        return false;
-      }
-    } catch(err){
-      return false;
-    }
-  } else {
-    return null// implement logic for non-authenticated user
-  }
-}
-
 function App() {
-  
-
-
-  const [authenticated, setAuthenticated] = useState(null);
-
-  useEffect(() => {
-    async function checkAuthentication() {
-      const isAuthenticated = await verifyUser();
-      setAuthenticated(isAuthenticated);
-    }
-
-    checkAuthentication();
-  }, [])
 
   return (
     <AppProvider>
       <div>
         <Header/>
-        <div class="inside-body">
+        <div className="inside-body">
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
