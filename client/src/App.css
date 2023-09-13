@@ -163,8 +163,8 @@ ul{
   margin-top: 10px;
 }
 
-.hidden {
-  visibility: hidden;
+.cart-card-holder {
+  height: fit-content;
 }
 /*      */
 

@@ -27,7 +27,7 @@ export default function Cart() {
 		<>
 
 			<div className="flex flex-col w-full lg:flex-row">
-				<div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">
+				<div className="cart-card-holder grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">
 					{carts.map((cart) => (
 				<div className="card w-96 bg-base-100 shadow-xl">
 					<div className="card-body">
