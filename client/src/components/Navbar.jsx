@@ -28,8 +28,8 @@ function Navigation() {
               <li>
                 <a className="btn " href="/products">Shop</a>
                 <ul className="menu menu-sm dropdown-content p-2">
-                  <li><a>Small water vessels</a></li>
-                  <li><a>Large water vessels</a></li>
+                  <li><a href='/small-water-vessels'>Small water vessels</a></li>
+                  <li><a href='/large-water-vessels'>Large water vessels</a></li>
                 </ul>
               </li> 
               <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
@@ -47,8 +47,8 @@ function Navigation() {
               <details>
                 <summary><a href="/products">Shop</a></summary>
                 <ul className="p-2">
-                  <li><a href="/products/small">Small water vessels</a></li>
-                  <li><a href="/products/large">Large water vessels</a></li>
+                  <li><a href="/products/small-water-vessels">Small water vessels</a></li>
+                  <li><a href="/products/large-water-vessels">Large water vessels</a></li>
                 </ul>
               </details>
             </li>

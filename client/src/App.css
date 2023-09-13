@@ -62,13 +62,13 @@ body {
   margin-left: 20px;
 }
 
+/* Products Result Page */
+
 .productTitle {
   color: black;
   text-align: center;
   font-size: 50px;
 }
-
-/* Products Result Page */
 
 .productBtn {
   background-color: rgb(26, 30, 36);
@@ -92,7 +92,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
