@@ -32,8 +32,8 @@ export default function ProductPage () {
 
         <div className="product-text-container">
           <h2 className="product-page-title">{products.title}</h2>
-          <h3>${products.price.toLocaleString()}</h3>
-          <p className="product-page-text">Product Description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis enim sint, rerum nihil consectetur odio! Modi, voluptates itaque facere enim quaerat molestias voluptas beatae, quis delectus consequuntur tempora et!</p>
+          <h3>${products.price}</h3>
+          <p className="product-page-text">{products.description}</p>
           <button className="btn product-page-button">Add to Cart</button>
         </div>
       </div>

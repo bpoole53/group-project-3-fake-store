@@ -19,7 +19,6 @@ export default function Products() {
 			return response.json()
 		}) .then (data => {
 			setProducts(data.payload)
-			console.log(data.payload)
 		})
 	}
 
