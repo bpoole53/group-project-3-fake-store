@@ -54,6 +54,12 @@ ul{
   margin: 100px;
 }
 
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-page-title {
   /* color: black; */
   font-size: 40px;
@@ -186,6 +192,11 @@ img {
   border-radius: 25px;
   border-color:rgb(170, 170, 170);
   border-width: .5px;
+}
+
+.productImage {
+  width: 200px; 
+  height: 200px; 
 }
 
 
