@@ -225,4 +225,9 @@ div.navbar {
 ul.menu.menu--horizontal {
  padding-left: 100px;
 
+ 
+}
+
+dark-theme{
+  color: white;
 }
