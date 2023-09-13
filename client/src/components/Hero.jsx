@@ -15,13 +15,21 @@ export default function Hero () {
     '/video4.mp4'
   ];
 
+  // videoSources.forEach((videoSrc) => {
+  //   const video = new Audio(videoSrc);
+  //   video.preload = 'auto';
+  //   video.load();
+  // });
+  // const videoRef = useRef(null);
+
   videoSources.forEach((videoSrc) => {
-    const video = new Audio(videoSrc);
+    const video = document.createElement('video');
+    video.src = videoSrc;
     video.preload = 'auto';
     video.load();
   });
+  
   const videoRef = useRef(null);
- 
 
 
   useEffect(() => {
