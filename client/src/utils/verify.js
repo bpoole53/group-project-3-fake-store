@@ -16,13 +16,13 @@ async function userAuth(){
         if (result && result?.status === 'success') {
           return {result} // logic for successful authentication
         } else {
-          return null;
+          return false;
         }
       } catch(err){
-        return null;        
+        return false;        
       }
     } else {
-      return null// implement logic for non-authenticated user
+      return false// implement logic for non-authenticated user
     }
   }
 
