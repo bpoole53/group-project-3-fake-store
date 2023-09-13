@@ -53,7 +53,7 @@ async function login(req, res) {
    
     const { password, ...modifiedUser } = user._doc;  //user._doc
     
-    return res.cookie("auth-cookie", token).json({ status: "success", payload: modifiedUser });
+    return res.cookie("auth-cookie", token).json({ status: "success", token, payload: modifiedUser });
   } catch (error) {
     return res.status(400).json({ status: "error", msg: "Authentication failed" });
   }

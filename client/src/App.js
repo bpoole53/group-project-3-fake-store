@@ -9,32 +9,44 @@ import Hero from './components/Hero'
 import ProductPage from "./pages/ProductPage"
 
 
+async function verifyUser(){
+  if(Cookies.get('auth-cookie')){
+    try {
+      const query = await fetch('api/user/verify', {
+        method: "POST",
+        body: '',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      const result = await query.json()
+      console.log(result)
+      if (result?.status === 'success') {
+        return true;  // logic for successful authentication
+      } else {
+        return false;
+      }
+    } catch(err){
+      return false;
+    }
+  } else {
+    return null// implement logic for non-authenticated user
+  }
+}
+
 function App() {
   
-  async function verifyUser(){
-    if(Cookies.get('auth-cookie')){
-      try {
-        const query = await fetch('api/user/verify', {
-          method: "POST",
-          body: '',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })
-        const result = await query.json()
-        if (result?.status === 'success') {
-          // logic for successful authentication
-        }
-      } catch(err){
-        
-      }
-    } else {
-      // implement logic for non-authenticated user
-    }
-  }
+
+
+  const [authenticated, setAuthenticated] = useState(null);
 
   useEffect(() => {
-    verifyUser()
+    async function checkAuthentication() {
+      const isAuthenticated = await verifyUser();
+      setAuthenticated(isAuthenticated);
+    }
+
+    checkAuthentication();
   }, [])
 
   return (

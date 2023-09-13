@@ -11,14 +11,15 @@ const userController = {
     async createUser(req, res) {
         try {
             const user = await User.create(req.body);
-            // const { password, ...modifiedUser } = user;
+            
             // create the token that will be attached to the cookie
             const token = jwt.sign({
                 email: user.email,
                 id: user._id
             }, process.env.JWT_SECRET, {expiresIn: 60 * 60}); ///jwt SECRET
 
-            res.cookie('auth-cookie', token).status(200).json({ status: 'success', payload: user });
+            const { password, ...modifiedUser } = user._doc;
+            res.cookie('auth-cookie', token).status(200).json({ status: 'success', payload: modifiedUser });
             console.log(user)
             // return res.status(200).json({ status: 'success', payload: user });
             // res.json(user);
