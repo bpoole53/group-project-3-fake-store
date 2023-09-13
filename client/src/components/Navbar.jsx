@@ -53,7 +53,7 @@ function Navigation() {
           </details>
         </li>
         <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
-        <a className="btn searchBtn" type="submit" href="/products">Search</a>
+        <a className="btn searchBtn" type="search" href="/products">Search</a>
       </ul>
     </div>
     <div className="navbar-end">

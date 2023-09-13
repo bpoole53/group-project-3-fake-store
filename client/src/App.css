@@ -197,3 +197,14 @@ aside{
 /* .inside-body{
   background-color: rgb(52, 59, 71);
 } */
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Change on focus */
+input[type=text]:focus {
+  width: 100%;
+}
