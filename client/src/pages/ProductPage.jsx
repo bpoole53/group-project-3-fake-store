@@ -47,7 +47,7 @@ export default function ProductPage () {
       <div className="product-page-container">
         <div className="w-64 carousel rounded-box">
           <div className="carousel-item w-full">
-            <img src={products.image.url} className="w-full" alt={products.name} />
+            <figure><img src={products.image} className="w-full" alt={products.name} /></figure>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ export default function ProductPage () {
           <h2 className="product-page-title">{products.name}</h2>
           <h3>${products.price}</h3>
           <p className="product-page-text">{products.description}</p>
-          <button className="btn product-page-button" onClick={(e) => addToUserCart(e, products._id)}>Add to Cart</button>
+          <button className="btn product-page-button" onClick={() => addToUserCart(products._id)}>Add to Cart</button>
         </div>
       </div>
     </>
