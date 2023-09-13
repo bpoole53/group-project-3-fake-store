@@ -28,8 +28,8 @@ function Navigation() {
               <li>
                 <a className="btn " href="/products">Shop</a>
                 <ul className="menu menu-sm dropdown-content p-2">
-                  <li><a>Category 1</a></li>
-                  <li><a>Category 2</a></li>
+                  <li><a>Small water vessels</a></li>
+                  <li><a>Large water vessels</a></li>
                 </ul>
               </li> 
               <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>

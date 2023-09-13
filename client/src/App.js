@@ -1,5 +1,5 @@
 import { AppProvider } from './utils/AppContext'
-import {Home, Login, Signup,Products,Profile,Cart,About,Checkout} from './pages'
+import {Home, Login, Signup,Products,Profile,Cart,About,Checkout, LargeBoats, SmallBoats} from './pages'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -25,6 +25,8 @@ function App() {
             <Route path='/cart' element={<Cart />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/productpage' element={<ProductPage/>}/>
+            <Route path='/large-water-vessels' element={<LargeBoats/>}/>
+            <Route path='/small-water-vessels' element={<SmallBoats/>}/>
           </Routes>      
         </BrowserRouter>
         </div>
