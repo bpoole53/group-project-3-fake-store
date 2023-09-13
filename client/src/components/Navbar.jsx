@@ -44,6 +44,11 @@ function Navigation() {
       <a className="btn btn-ghost normal-case text-xl" href="/">Hull & Deck
       
       </a>
+      {authenticated ? (
+      <p>Welcome back {userData.fname}!</p>
+          ) : (      
+      <p>Welcome Guest</p>
+      )}
     </div>
     <div className="navbar-center lg:flex">
       <ul className="menu menu-horizontal px-1">
