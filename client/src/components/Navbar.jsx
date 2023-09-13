@@ -44,13 +44,12 @@ function Navigation() {
       <a className="btn btn-ghost normal-case text-xl" href="/">Hull & Deck
       </a>
 
+      <img className="footerimg" src="/Hull&DeckBlu.png" heighth ="10%" width= "10%" border-radius ="25px" />
       {authenticated ? (
       <p>Welcome back {userData.fname}!</p>
           ) : (      
       <p>Welcome Guest</p>
       )}
-
-      <img className="footerimg" src="/Hull&DeckBlu.png" heighth ="10%" width= "10%" border-radius ="25px" />
 
     </div>
     <div className="navbar-center sm:hidden lg:flex">
