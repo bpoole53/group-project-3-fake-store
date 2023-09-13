@@ -57,8 +57,12 @@ function Navigation() {
       </ul>
     </div>
     <div className="navbar-end">
-      <a href="/cart" className="cartNav">Cart</a>
+    <a href="/cart" className="cartNav">Cart</a>
+      {authenticated ? (
+            <a onClick={handleLogout} className="btn">Logout</a>
+          ) : (      
       <a className="btn" href="/login">Login</a>
+      )}
     </div>
    </div>
    </>
