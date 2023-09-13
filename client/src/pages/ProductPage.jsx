@@ -28,10 +28,10 @@ export default function ProductPage () {
   const addToUserCart = (productId) => {
     fetch(`/api/cart/${userData._id}`, {
       method: "POST",
-      body: {
+      body: JSON.stringify({
         productId: productId,
         quantity: 1
-      },
+      }),
       headers: {
         "Content-Type": "application/json"
       }})
