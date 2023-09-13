@@ -1,10 +1,9 @@
 import React from "react";
-import ProductCardContainer from "../components/ProductCardContainer";
 import ProductCard from "../components/ProductCard";
 import { useState, useEffect } from 'react'
 import '../App.css'
 
-export default function Products() {
+export default function Products({ setProduct }) {
 
 
 	const [ products, setProducts ] = useState([])
@@ -31,10 +30,12 @@ export default function Products() {
 		<div className="productPageContainer">
 			<h1 className="productTitle">Products</h1>
 
-			<ProductCardContainer>
-					{products.map( (product) => (
-					<ProductCard/>))}
-			</ProductCardContainer>
+			<section className='productContainer'>
+			<section className='productCol'>
+			 {products.map( (product) => (
+			<ProductCard setProduct={setProduct} />))} 
+			</section>
+			</section>
 
 		</div>
 		</>
