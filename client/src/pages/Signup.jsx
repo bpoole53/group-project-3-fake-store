@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Signup(){
     const [formData, setFormData] = useState({fname: '', lname: '', email: '', password: ''})
-    const [ signupResult, setSignupResult ] = useState("")
+    const [signupResult, setSignupResult ] = useState("")
 
     const handleInputChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})

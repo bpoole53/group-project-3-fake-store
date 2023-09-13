@@ -1,8 +1,18 @@
-
+import { useAppContext } from '../utils/AppContext';
 
 function Navigation() {
+  const { authenticated } = useAppContext();
+  
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  const handleLogout = () => {
+    // Clear the cookie
+    document.cookie = 'auth-cookie=; expires=Thu, 01 Jan 1950 00:00:00 UTC; path=/;';
+    // setIsLoggedIn(false);
 
+    // Redirect the user to the homepage upon logout
+    window.location.href = '/';
+  };
 
   
   return (

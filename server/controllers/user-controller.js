@@ -6,17 +6,19 @@ require('dotenv').config()
 
 
 const userController = {
+
     async createUser(req, res) {
         try {
             const user = await User.create(req.body);
-            // const { password, ...modifiedUser } = user;
+            
             // create the token that will be attached to the cookie
             const token = jwt.sign({
                 email: user.email,
                 id: user._id
             }, process.env.JWT_SECRET, {expiresIn: 60 * 60}); ///jwt SECRET
 
-            res.cookie('auth-cookie', token).status(200).json({ status: 'success', payload: user });
+            const { password, ...modifiedUser } = user._doc;
+            res.cookie('auth-cookie', token).status(200).json({ status: 'success', payload: modifiedUser });
             console.log(user)
             // return res.status(200).json({ status: 'success', payload: user });
             // res.json(user);
@@ -26,6 +28,7 @@ const userController = {
             return res.status(400).json({ status: 'error', msg: `Error creating user: ${err.message}` });
         }
     },
+
 
     async authUser(req, res) {
         let user;
@@ -59,6 +62,7 @@ const userController = {
         return res.status(200).json({ status: 'success', payload: authenticatedUser });
     },
 
+
     async verifyUser(req, res) {
         const cookie = req.cookies["auth-cookie"];
     
@@ -88,6 +92,69 @@ const userController = {
         }
     },
 
-}
+     
+   
+
+  updateUserById: async (req, res) => {
+    const userId = req.params.id;
+    const updates = req.body;
+    try {
+      const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true });
+      if (!updatedUser) {
+        return res.status(404).json({ status: 'error', msg: 'User not found' });
+      }
+      const { password, ...modifiedUser } = updatedUser;
+      return res.status(200).json({ status: 'success', payload: modifiedUser });
+    } catch (error) {
+      console.error(error.message);
+      return res.status(500).json({ status: 'error', msg: 'Internal Server Error' });
+    }
+  },
+
+  getAllUsers: async (req, res) => {
+    try {
+      const users = await User.find();
+      const modifiedUsers = users.map((user) => {
+        const { password, ...modifiedUser } = user.toObject();
+        return modifiedUser;
+      });
+      return res.status(200).json({ status: 'success', payload: modifiedUsers });
+    } catch (error) {
+      console.error(error.message);
+      return res.status(500).json({ status: 'error', msg: 'Internal Server Error' });
+    }
+  },
+
+  deleteUserById: async (req, res) => {
+    const userId = req.params.id;
+    try {
+      const deletedUser = await User.findByIdAndRemove(userId);
+      if (!deletedUser) {
+        return res.status(404).json({ status: 'error', msg: 'User not found' });
+      }
+      const { password, ...modifiedUser } = deletedUser;
+      return res.status(200).json({ status: 'success', payload: modifiedUser });
+    } catch (error) {
+      console.error(error.message);
+      return res.status(500).json({ status: 'error', msg: 'Internal Server Error' });
+    }
+  },
+
+  getUserById: async (req, res) => {
+    const userId = req.params.id;
+    try {
+      const user = await User.findById(userId);
+      if (!user) {
+        return res.status(404).json({ status: 'error', msg: 'User not found' });
+      }
+      const { password, ...modifiedUser } = user.toObject();
+      return res.status(200).json({ status: 'success', payload: modifiedUser });
+    } catch (error) {
+      console.error(error.message);
+      return res.status(500).json({ status: 'error', msg: 'Internal Server Error' });
+    }
+  },
+};
+
 
 module.exports = userController;

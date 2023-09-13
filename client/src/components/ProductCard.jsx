@@ -1,16 +1,14 @@
-
-      
-      import React, { useEffect, useState } from 'react';
-      import '../App.css';
+import React, { useEffect, useState } from 'react';
+import '../App.css';
       
       export default function ProductCard() {
         const [products, setProducts] = useState([]);
       
         useEffect(() => {
-          fetch('/api/products')
+          fetch('/api/product/')
             .then((response) => response.json())
             .then((data) => {
-              setProducts(data); 
+              setProducts(data.payload); 
             })
             .catch((error) => {
               console.error('Error fetching product data:', error);

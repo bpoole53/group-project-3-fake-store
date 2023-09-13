@@ -1,26 +1,57 @@
+
+
 [
-{
-    "fname":"John",
-    "lname":"Doe",
-    "email":"JohnDoe@mail.com",
-    "password":"JohnDoeeee"
-},
-{
-    "fname":"Alexander",
-    "lname":"Johnson",
-    "email":"AlexJay@mail.com",
-    "password":"AlexJayJay"
-},
-{
-    "fname":"Noah",
-    "lname":"Heath",
-    "email":"HeathNoah@mail.com",
-    "password":"Noahhh"
-},
-{
-    "fname":"Test",
-    "lname":"Test",
-    "email":"Test@mail.com",
-    "password":"password"
-}
+    {
+      "fname": "John",
+      "lname": "Doe",
+      "email": "JohnDoe@mail.com",
+      "password": "JohnDoeeee",
+      "cart": [
+        {
+          "product_name": "Sailboat",
+          "quantity": 1,
+          "productDetails": {
+            "price": 3500
+          }
+        },
+        {
+          "product_name": "Fishing Boat",
+          "quantity": 1,
+          "productDetails": {
+            "price": 28000
+          }
+        }
+      ]
+    
+    },
+    {
+      "fname": "Alexander",
+      "lname": "Johnson",
+      "email": "AlexJay@mail.com",
+      "password": "AlexJayJay",
+      "cart": [
+        {
+          "product_name": "Fishing Boat",
+          "quantity": 1,
+          "productDetails": {
+            "price": 28000
+          }
+        }
+      ]
+      
+    },
+    {
+      "fname": "Noah",
+      "lname": "Heath",
+      "email": "HeathNoah@mail.com",
+      "password": "Noahhh",
+      "cart": []  
+    },
+    {
+      "fname": "Test",
+      "lname": "Test",
+      "email": "Test@mail.com",
+      "password": "password",
+      "cart": []  
+    }
 ]
