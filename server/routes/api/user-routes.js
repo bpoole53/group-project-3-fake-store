@@ -11,7 +11,7 @@ router.post('/', userController.createUser);
 router.post('/auth', userController.authUser);
 
 // GET Verify user authentication
-router.get('/verify', userController.verifyUser);
+router.post('/verify', userController.verifyUser);
 
 // PUT Update a user by ID
 router.put('/:id', userController.updateUserById);
