@@ -10,9 +10,9 @@ export default function Hero () {
 
   const videoSources = [
     '/video1.mp4',
-    '/video2.mp4',
-    '/video3.mp4',
-    '/video4.mp4'
+    // '/video2.mp4',
+    // '/video3.mp4',
+    // '/video4.mp4'
   ];
 
   // videoSources.forEach((videoSrc) => {
@@ -32,33 +32,33 @@ export default function Hero () {
   const videoRef = useRef(null);
 
 
-  useEffect(() => {
-    let currentVideoIndex = 0;
+  // useEffect(() => {
+  //   let currentVideoIndex = 0;
 
-    const videoElement = videoRef.current;
+  //   const videoElement = videoRef.current;
 
-    videoRef.current.addEventListener('ended', playNextVideo);
+  //   videoRef.current.addEventListener('ended', playNextVideo);
 
-    function playNextVideo () {
-    if (currentVideoIndex < videoSources.length) {
-      videoElement.src = videoSources[currentVideoIndex];
-      videoElement.play().catch((error) => {
-        console.error("error on play", error);
-        })
-    }
-      // videoRef.current.src = videoSources[currentVideoIndex];
-      // videoRef.current.play();
-    };
+  //   function playNextVideo () {
+  //   if (currentVideoIndex < videoSources.length) {
+  //     videoElement.src = videoSources[currentVideoIndex];
+  //     videoElement.play().catch((error) => {
+  //       console.error("error on play", error);
+  //       })
+  //   }
+  //     // videoRef.current.src = videoSources[currentVideoIndex];
+  //     // videoRef.current.play();
+  //   };
 
     
 
-    // videoRef.current.src = videoSources[currentVideoIndex];
-    // videoRef.current.play();
+  //   // videoRef.current.src = videoSources[currentVideoIndex];
+  //   // videoRef.current.play();
 
-    return ()  => {
-      videoRef.current.removeEventListener('ended', playNextVideo);
-    };
-  },[videoSources]);
+  //   return ()  => {
+  //     videoRef.current.removeEventListener('ended', playNextVideo);
+  //   };
+  // },[videoSources]);
 
 
 
