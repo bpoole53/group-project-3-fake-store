@@ -5,13 +5,10 @@ function Navigation() {
   
   console.log(authenticated)
   console.log(userData)
-  
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogout = () => {
     // Clear the cookie
     document.cookie = 'auth-cookie=; expires=Thu, 01 Jan 1950 00:00:00 UTC; path=/;';
-    // setIsLoggedIn(false);
 
     // Redirect the user to the homepage upon logout
     window.location.href = '/';
@@ -46,9 +43,10 @@ function Navigation() {
 
       <img className="footerimg" src="/Hull&DeckBlu.png" heighth ="10%" width= "10%" border-radius ="25px" />
       {authenticated ? (
-      <p>&nbsp;&nbsp;Welcome back {userData.fname}!</p>
+
+      <p className="p-4">Welcome back {userData.fname}!</p>
           ) : (      
-      <p>&nbsp;&nbsp;Welcome Guest</p>
+      <p className="p-4">Welcome Guest</p>
       )}
 
     </div>
