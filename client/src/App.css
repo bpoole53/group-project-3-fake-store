@@ -26,7 +26,9 @@ ul{
 #navbar{
   position: relative;
   z-index: auto;
+  
 }
+
 
 .footer {
   display: flex;
@@ -52,12 +54,12 @@ ul{
 }
 
 .product-page-title {
-  color: black;
+  /* color: black; */
   font-size: 40px;
 }
 
 .product-page-text {
-  color: black;
+  /* color: black; */
 }
 
 .product-page-button {
@@ -72,7 +74,7 @@ ul{
 /* Products Result Page */
 
 .productTitle {
-  color: black;
+  /* color: black; */
   text-align: center;
   font-size: 50px;
 }
