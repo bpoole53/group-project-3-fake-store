@@ -26,7 +26,7 @@ export default function ProductPage () {
   
 
   const addToUserCart = (productId) => {
-    fetch(`/api/cart/${userData.id}`, {
+    fetch(`/api/cart/${userData._id}`, {
       method: "POST",
       body: {
         productId: productId,
