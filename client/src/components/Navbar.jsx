@@ -46,7 +46,7 @@ function Navigation() {
 
       <p className="p-4">Welcome back {userData.fname}!</p>
           ) : (      
-      <p>&nbsp;&nbsp;Welcome Guest</p>
+      <p className="p-4">Welcome Guest</p>
       )}
 
     </div>
