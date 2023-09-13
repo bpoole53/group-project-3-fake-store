@@ -1,7 +1,10 @@
 import { useAppContext } from '../utils/AppContext';
 
 function Navigation() {
-  const { authenticated } = useAppContext();
+  const { authenticated, userData } = useAppContext();
+  
+  console.log(authenticated)
+  console.log(userData)
   
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -28,8 +31,10 @@ function Navigation() {
           <li>
             <a href="/products">Shop</a>
             <ul className="p-2">
-                <li><a href="/small-water-vessels">Small water vessels</a></li>
-                <li><a href="/large-water-vessels">Large water vessels</a></li>
+
+                  <li><a href="/products/small-water-vessels">Small Water Vessels</a></li>
+                  <li><a href="/products/large-water-vessels">Large Water vessels</a></li>
+
             </ul>
           </li>
           <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
@@ -47,13 +52,15 @@ function Navigation() {
           <details>
             <summary>Shop</summary>
             <ul className="p-2">
-                <li><a href="/small-water-vessels">Small water vessels</a></li>
-                <li><a href="/large-water-vessels">Large water vessels</a></li>
+
+                  <li><a href="/products/small-water-vessels">Small Water Vessels</a></li>
+                  <li><a href="/products/large-water-vessels">Large Water Vessels</a></li>
+
             </ul>
           </details>
         </li>
         <li><input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" /></li>
-        <a className="btn searchBtn" type="submit" href="/products">Search</a>
+        <a className="btn searchBtn" type="search" href="/products">Search</a>
       </ul>
     </div>
     <div className="navbar-end">

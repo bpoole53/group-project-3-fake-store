@@ -14,11 +14,18 @@ body {
   /* height: 645px; */
   /* background-color: rgb(170, 170, 170); */
 }
+ul{
+  z-index: 1;
+}
 
 /* Header */
 
 .cartNav {
   margin-right: 15px;
+}
+#navbar{
+  position: relative;
+  z-index: auto;
 }
 
 .footer {
@@ -197,3 +204,14 @@ aside{
 /* .inside-body{
   background-color: rgb(52, 59, 71);
 } */
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
