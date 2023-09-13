@@ -37,6 +37,8 @@ export default function Hero () {
 
     const videoElement = videoRef.current;
 
+    videoRef.current.addEventListener('ended', playNextVideo);
+
     function playNextVideo () {
     if (currentVideoIndex < videoSources.length) {
       videoElement.src = videoSources[currentVideoIndex];
@@ -44,14 +46,14 @@ export default function Hero () {
         console.error("error on play", error);
         })
     }
-      videoRef.current.src = videoSources[currentVideoIndex];
-      videoRef.current.play();
+      // videoRef.current.src = videoSources[currentVideoIndex];
+      // videoRef.current.play();
     };
 
-    videoRef.current.addEventListener('ended', playNextVideo);
+    
 
-    videoRef.current.src = videoSources[currentVideoIndex];
-    videoRef.current.play();
+    // videoRef.current.src = videoSources[currentVideoIndex];
+    // videoRef.current.play();
 
     return ()  => {
       videoRef.current.removeEventListener('ended', playNextVideo);
