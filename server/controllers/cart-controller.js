@@ -7,8 +7,9 @@ const Product = require('../models/Product');
 
 const cartController = {
 
-  async addProductToUserCart(req, res) {
-    const { userId } = req.params;
+  addProductToUserCart: async function(req, res) {
+    console.log("cart route")
+    const { userId } = req.params.userId;
     const { productId, quantity } = req.body;
     console.log(`userId: ${userId}`);
     console.log(`productId: ${productId}`);
@@ -37,11 +38,12 @@ const cartController = {
       return res.status(201).json({ message: 'Product added to cart successfully' });
     } catch (error) {
       console.error('Error:', error);
+      console.log(error)
       return res.status(500).json({ message: 'Internal server error' });
     }
   },
 
-  async getUserCart(req, res) {
+  getUserCart: async function(req, res) {
     const { userId } = req.params;
     console.log(`Retrieving cart for userID: ${userId}`);
     try {
@@ -57,7 +59,7 @@ const cartController = {
     }
   },
 
-  async deleteUserCart(req, res) {
+  deleteUserCart: async function(req, res) {
     const { userId } = req.params;
     console.log(`Deleting cart for user with ID: ${userId}`);
 

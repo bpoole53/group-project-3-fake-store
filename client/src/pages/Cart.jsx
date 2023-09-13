@@ -6,6 +6,7 @@ import { useAppContext } from '../utils/AppContext';
 export default function Cart() {
 	const { userData } = useAppContext();
 	const [ carts, setCarts ] = useState([])
+	console.log(userData._id)
 
 	useEffect(() => {
 		fetch(`/api/cart/${userData._id}`, {
@@ -16,10 +17,11 @@ export default function Cart() {
 		}) .then ((response) => {
 			return response.json()
 		}) .then (data => {
-			setCarts(data.payload)
-			console.log(data.payload)
+			setCarts([data.cart])
+			console.log(data.cart)
+			
 		})
-	})
+	}, []);
 
 	return(
 		<>
