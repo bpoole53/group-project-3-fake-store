@@ -14,6 +14,9 @@ body {
   /* height: 645px; */
   /* background-color: rgb(170, 170, 170); */
 }
+ul{
+  z-index: 1;
+}
 
 /* Header */
 
