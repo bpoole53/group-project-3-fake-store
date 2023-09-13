@@ -1,7 +1,10 @@
 import { useAppContext } from '../utils/AppContext';
 
 function Navigation() {
-  const { authenticated } = useAppContext();
+  const { authenticated, userData } = useAppContext();
+  
+  console.log(authenticated)
+  console.log(userData)
   
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
