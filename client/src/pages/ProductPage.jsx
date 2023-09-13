@@ -25,7 +25,7 @@ export default function ProductPage ({ product }) {
       <div className="product-page-container">
         <div className="w-64 carousel rounded-box">
           <div className="carousel-item w-full">
-            <img src={products.photo} className="w-full" alt={products.name} />
+            <img src={products.image.url} className="w-full" alt={products.name} />
           </div>
         </div>
 
