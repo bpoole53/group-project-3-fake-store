@@ -26,7 +26,9 @@ ul{
 #navbar{
   position: relative;
   z-index: auto;
+  
 }
+
 
 .footer {
   display: flex;
@@ -52,12 +54,12 @@ ul{
 }
 
 .product-page-title {
-  color: black;
+  /* color: black; */
   font-size: 40px;
 }
 
 .product-page-text {
-  color: black;
+  /* color: black; */
 }
 
 .product-page-button {
@@ -72,7 +74,7 @@ ul{
 /* Products Result Page */
 
 .productTitle {
-  color: black;
+  /* color: black; */
   text-align: center;
   font-size: 50px;
 }
@@ -93,18 +95,15 @@ ul{
   margin-bottom: 10px;
 } 
 
-.prodCol {
-  border: 2px solid black;
-  width: 1000px;
-  align-items: flex-start;
-  justify-content: center;
+.productCol {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid red;
+  width: 800px;
 }
 
 .card-body {
-  background-color: rgb(170, 170, 170);
   height: 150px;
 }
 
@@ -113,14 +112,13 @@ ul{
 }
 
 .card-title, .card-price {
-  color: black;
   font-weight: bold;
 }
 
 /* Login and Signup Pages */
 
 .loginForm h1, .signupForm h1 {
-  color: black;
+  /* color: black; */
 }
 
 .loginForm, .signupForm {
@@ -132,7 +130,7 @@ ul{
 }
 
 .loginForm .link {
-  color: black;
+  /* color: black; */
 }
 
 /* Checkout Page */
@@ -225,4 +223,5 @@ div.navbar {
 ul.menu.menu--horizontal {
  padding-left: 100px;
 
+ 
 }

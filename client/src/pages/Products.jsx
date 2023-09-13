@@ -3,7 +3,7 @@ import ProductCard from "../components/ProductCard";
 import { useState, useEffect } from 'react'
 import '../App.css'
 
-export default function Products({ setProduct }) {
+export default function Products() {
 
 
 	const [ products, setProducts ] = useState([])
@@ -17,7 +17,7 @@ export default function Products({ setProduct }) {
 		.then(response => {
 			return response.json()
 		}) .then (data => {
-			setProducts(data.payload)
+			setProducts([data.payload.length])
 		})
 	}
 
@@ -30,10 +30,10 @@ export default function Products({ setProduct }) {
 		<div className="productPageContainer">
 			<h1 className="productTitle">Products</h1>
 
-			<section className='productContainer'>
+			<section className='productContainer'> 
 			<section className='productCol'>
 			 {products.map( (product) => (
-			<ProductCard setProduct={setProduct} />))} 
+			 <ProductCard />))}
 			</section>
 			</section>
 

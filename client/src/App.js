@@ -27,8 +27,8 @@ function App() {
             <Route path='/profile' element={<Profile />} />
             <Route path='/productpage' element={<ProductPage/>}/>
             <Route path='/productpage/:id' element={<ProductPage/>}/>
-            <Route path='/large-water-vessels' element={<LargeBoats/>}/>
-            <Route path='/small-water-vessels' element={<SmallBoats/>}/>
+            <Route path='/products/large-water-vessels' element={<LargeBoats/>}/>
+            <Route path='/products/small-water-vessels' element={<SmallBoats/>}/>
           </Routes>      
         </BrowserRouter>
         </div>

@@ -7,8 +7,7 @@
       "price": 35000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1515471216966-c8521f081224?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       }
     },
     {
@@ -17,8 +16,7 @@
       "price": 28000,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1551942296-97384c850440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -27,8 +25,7 @@
       "price": 1200000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -37,8 +34,7 @@
       "price": 500,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1586699253884-e199770f63b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -47,8 +43,7 @@
       "price": 400,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1617610839501-af0079ef225d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -57,18 +52,16 @@
       "price": 55000,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1615646194267-ecf4380ac001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
       "name": "Massive Cruise Ship",
       "description": "A massive cruise ship for unforgettable vacations.",
-      "price": 3000000,
+      "price": 30000000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1554254648-2d58a1bc3fd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
       }
     },
     {
@@ -77,8 +70,7 @@
       "price": 500000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1533738870554-3016c973efbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -87,8 +79,7 @@
       "price": 30000,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1632852624165-8b21103b8434?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -97,8 +88,7 @@
       "price": 50000,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://plus.unsplash.com/premium_photo-1661911911426-6082a2ca3c37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
       }
     },
     {
@@ -107,8 +97,7 @@
       "price": 75000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1589139312487-1918d32befe4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -117,8 +106,7 @@
       "price": 800,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1605542205488-5b290e8bcc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -127,8 +115,7 @@
       "price": 2200,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1524061508355-90afbf7fcf03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
       }
     },
     {
@@ -137,8 +124,7 @@
       "price": 350,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1543163300-3566d6a3fab0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       }
     },
     {
@@ -147,8 +133,7 @@
       "price": 55000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1516756112173-f79f9fe89988?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       }
     },
     {
@@ -157,8 +142,7 @@
       "price": 800,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1602623059454-7bba00f5ddfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80"
       }
     },
     {
@@ -167,8 +151,7 @@
       "price": 2000000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1575976933959-b47ffbe1ebc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     },
     {
@@ -177,8 +160,7 @@
       "price": 150000,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1592047742193-05d4ecbbbf8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80"
       }
     },
     {
@@ -187,8 +169,7 @@
       "price": 100000,
       "category": "Large Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1635604545058-424b211d940f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       }
     },
     {
@@ -197,8 +178,7 @@
       "price": 2500,
       "category":"Small Water Vessel",
       "image": {
-        "data": "",
-        "contentType": ""
+        "url": "https://images.unsplash.com/photo-1525721653822-f9975a57cd4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     }
 ]

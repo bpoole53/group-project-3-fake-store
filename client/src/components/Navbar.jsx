@@ -43,9 +43,10 @@ function Navigation() {
 
       <img className="footerimg" src="/Hull&DeckBlu.png" heighth ="10%" width= "10%" border-radius ="25px" />
       {authenticated ? (
+
       <p className="p-4">Welcome back {userData.fname}!</p>
           ) : (      
-      <p>Welcome Guest</p>
+      <p>&nbsp;&nbsp;Welcome Guest</p>
       )}
 
     </div>
