@@ -1,5 +1,4 @@
 import ProductCard from "../components/ProductCard"
-import ProductCardContainer from "../components/ProductCardContainer"
 import React, { useEffect, useState } from 'react';
 
 export default function SmallBoats () {
