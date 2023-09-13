@@ -93,18 +93,15 @@ ul{
   margin-bottom: 10px;
 } 
 
-.prodCol {
-  border: 2px solid black;
-  width: 1000px;
-  align-items: flex-start;
-  justify-content: center;
+.productCol {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid red;
+  width: 800px;
 }
 
 .card-body {
-  background-color: rgb(170, 170, 170);
   height: 150px;
 }
 
@@ -113,7 +110,6 @@ ul{
 }
 
 .card-title, .card-price {
-  color: black;
   font-weight: bold;
 }
 
