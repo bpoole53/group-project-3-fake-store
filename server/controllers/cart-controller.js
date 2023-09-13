@@ -9,7 +9,7 @@ const cartController = {
 
   addProductToUserCart: async function(req, res) {
     console.log("cart route")
-    const { userId } = req.params.userId;
+    const { userId } = req.params;
     const { productId, quantity } = req.body;
     console.log(`userId: ${userId}`);
     console.log(`productId: ${productId}`);
