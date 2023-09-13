@@ -17,9 +17,8 @@ const productSchema = new Schema({
     enum: ['Large Water Vessel', 'Small Water Vessel'],
     required: true,
   },
-  photo: {
-    data: Buffer,
-    contentType: String,
+  image: {
+    url: String,
   },
 });
 
