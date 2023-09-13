@@ -120,7 +120,7 @@ ul{
 /* Login and Signup Pages */
 
 .loginForm h1, .signupForm h1 {
-  color: black;
+  /* color: black; */
 }
 
 .loginForm, .signupForm {
@@ -132,7 +132,7 @@ ul{
 }
 
 .loginForm .link {
-  color: black;
+  /* color: black; */
 }
 
 /* Checkout Page */
@@ -226,8 +226,4 @@ ul.menu.menu--horizontal {
  padding-left: 100px;
 
  
-}
-
-dark-theme{
-  color: white;
 }
