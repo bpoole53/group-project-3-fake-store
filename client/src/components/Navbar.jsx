@@ -40,7 +40,7 @@ function Navigation() {
       </a>
       <img className="footerimg" src="/Hull&DeckBlu.png" heighth ="10%" width= "10%" border-radius ="25px" />
     </div>
-    <div className="navbar-center md sm:hidden lg:flex">
+    <div className="navbar-center sm:hidden lg:flex">
       <ul className="menu menu-horizontal px-1 ">
         <li><a href="/about">About</a></li>
         <li tabIndex={0}>

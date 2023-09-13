@@ -74,7 +74,7 @@ export default function Hero () {
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">The waters are calling...</h1>
-          <p className="mb-5">From beginning design to finished product, Hull & Deck ensures that our watercraft are equipped with the highest quality building products available. From personal watercraft to exquisite yachts, our crafts are guaranteed to handle any body of water and last over time. Whether you are looking for a shipwright to build your dream custom boat or would like a pre-built vessel, we have you covered! </p>
+          <p className="mb-5">From beginning design to finished product, Hull & Deck ensures that our watercraft are equipped with the highest quality building products available. <br></br><br></br>From personal watercraft to exquisite yachts, our crafts are guaranteed to handle any body of water and last over time. Whether you are looking for a shipwright to build your dream custom boat or would like a pre-built vessel, we have you covered! </p>
           <button className="btn btn-primary" onClick={sendtoProducts}>Shop All Watercraft</button>
       </div>
       </div>
