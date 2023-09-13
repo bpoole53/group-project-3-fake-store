@@ -23,7 +23,7 @@ export default function ProductCard() {
     <div>
       {products.map((product) => (
         <div className="card card-compact w-96 bg-base-100 shadow-xl" key={product._id}>
-        <figure><img src={product.photo} alt={product.name} /></figure>
+        <figure><img src={product.image} alt={product.name} /></figure>
         <div className="card-body">
         <h2 className="card-title">{product.name}</h2>
         <p className="card-price">${product.price.toLocaleString()}</p>
