@@ -10,7 +10,7 @@ return(<>
 			<img src={buildingboats} className="max-w-xl rounded-lg shadow-2xl" />
 			<div>
 					<h1 className="text-5xl font-bold text-center">Our Mission:</h1>
-					<p className="py-6 text-xl"> To provide the most reliable and intuitive watercraft available and are commit to be the best partner for our stakeholders.</p>
+					<p className="py-6 text-xl"> To provide the most reliable and intuitive watercraft available and are committed to be the best partner for our stakeholders.</p>
 
 					<h2 className="text-3xl font-bold">Our Vision:</h2>
 					<p className="py-6 text-xl">

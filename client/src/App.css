@@ -1,16 +1,21 @@
 
-/* body {
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: rgb(170, 170, 170);
-} */
+  /* background-color: rgb(170, 170, 170); */
+  /* min-height: 100vh; */
+}
+
 
 .inside-body{
   margin: 0;
   padding: 0;
-  height: 645px;
-  background-color: rgb(170, 170, 170);
+  /* height: 645px; */
+  /* background-color: rgb(170, 170, 170); */
+}
+ul{
+  z-index: 1;
 }
 
 /* Header */
@@ -18,17 +23,22 @@
 .cartNav {
   margin-right: 15px;
 }
+#navbar{
+  position: relative;
+  z-index: auto;
+}
 
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0;
+  top: 40px;
   height: 200px;
-  padding: 0;
-  background-color: rbg (26, 30, 36);
+  margin-top: 20px;
+  /* padding: 0; */
+  /* background-color: rgb (26, 30, 36); */
 }
 
 
@@ -59,13 +69,13 @@
   margin-left: 20px;
 }
 
+/* Products Result Page */
+
 .productTitle {
   color: black;
   text-align: center;
   font-size: 50px;
 }
-
-/* Products Result Page */
 
 .productBtn {
   background-color: rgb(26, 30, 36);
@@ -89,7 +99,7 @@
   align-items: flex-start;
   justify-content: center;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -127,27 +137,81 @@
 
 /* Checkout Page */
 
-.checkout-form-holder {
+
+.checkout-form-holder, .payment-form-holder {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   height: fit-content;
-  width: 600px;
 }
 
+.checkout-form-holder {
+  width: 600px;
+}
 
 .product-text-container {
   margin-left: 20px;
 }
 
+.billing-info-holder, .payment-form  {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+/*      */
 
 #video {
-  position: fixed;
+  position: relative;
   z-index: -1;
   width: 100%;
-  object-fit: cover;
-  background-color: rbg (26, 30, 36, .9) ;
+  object-fit: contain;
+  background-color: rgb(26, 30, 36, .9) ;
 }
 
 .hero-content {
   margin-top: 100px;
-  background-color: rbg (26, 30, 36, .9);
+  background-color: rgb(26, 30, 36, .4);
   color: white;
+}
+
+.footerimg {
+  border-radius: 75px;
+  border-color:rgb(170, 170, 170);
+  border-width: 5px;
+}
+
+img {
+  border-radius: 25px;
+  border-color:rgb(170, 170, 170);
+  border-width: .5px;
+}
+
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+aside{
+  padding-bottom: 10px;
+}
+
+/* .inside-body{
+  background-color: rgb(52, 59, 71);
+} */
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
 }

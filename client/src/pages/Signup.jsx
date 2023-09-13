@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Signup(){
     const [formData, setFormData] = useState({fname: '', lname: '', email: '', password: ''})
-    const [ signupResult, setSignupResult ] = useState("")
+    const [signupResult, setSignupResult ] = useState("")
 
     const handleInputChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
@@ -22,6 +22,7 @@ export default function Signup(){
           setSignupResult("fail")
           console.log(query)
         } else {
+          setSignupResult("success")
           const result = await query.json()
           if( result.status === "success" && result.payload ){
             window.location.href = "/"
@@ -72,7 +73,12 @@ export default function Signup(){
             <div className="alert alert-danger" role="alert">
                Signup failed!
             </div>
-          )} 
+          )}
+          { signupResult === "success" && (
+            <div className="alert alert-success" role="alert">
+              Signup successful!
+            </div> 
+          )}
           
         </div>
       )

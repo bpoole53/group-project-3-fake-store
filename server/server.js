@@ -1,5 +1,5 @@
 
-
+const cookieParser = require('cookie-parser');
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -33,6 +33,7 @@ dbConnection.once('open', () => {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cookieParser());
 
 app.use('/api', apiRoutes);
 
