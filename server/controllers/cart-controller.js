@@ -40,6 +40,28 @@ const cartController = {
       return res.status(500).json({ message: 'Internal server error' });
     }
   },
+
+  async deleteUserCart(req, res) {
+    const { userId } = req.params;
+    console.log(`Deleting cart for user with ID: ${userId}`);
+
+    try {
+      const user = await User.findById(userId);
+      if (!user) {
+        console.log('User not found');
+        return res.status(404).json({ message: 'User not found' });
+      }
+      
+      user.cart = [];
+
+      await user.save();
+      console.log('Cart deleted successfully');
+      return res.status(200).json({ message: 'Cart deleted successfully' });
+    } catch (error) {
+      console.error('Error:', error);
+      return res.status(500).json({ message: 'Internal server error' });
+    }
+  },
 };
 
 
