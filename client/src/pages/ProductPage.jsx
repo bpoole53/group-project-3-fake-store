@@ -25,12 +25,8 @@ export default function ProductPage ({ product }) {
       <div className="product-page-container">
         <div className="w-64 carousel rounded-box">
           <div className="carousel-item w-full">
-            <img src="https://via.placeholder.com/500x700" className="w-full" alt="Tailwind CSS Carousel component" />
-          </div> 
-
-          <div className="carousel-item w-full">
-            <img src="https://via.placeholder.com/500x700" className="w-full" alt="Tailwind CSS Carousel component" />
-          </div> 
+            <img src={products.photo} className="w-full" alt={products.name} />
+          </div>
         </div>
 
         <div className="product-text-container">
