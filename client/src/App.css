@@ -20,6 +20,10 @@ body {
 .cartNav {
   margin-right: 15px;
 }
+#navbar{
+  position: relative;
+  z-index: auto;
+}
 
 .footer {
   display: flex;
@@ -62,13 +66,13 @@ body {
   margin-left: 20px;
 }
 
+/* Products Result Page */
+
 .productTitle {
   color: black;
   text-align: center;
   font-size: 50px;
 }
-
-/* Products Result Page */
 
 .productBtn {
   background-color: rgb(26, 30, 36);
@@ -92,7 +96,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -197,14 +201,3 @@ aside{
 /* .inside-body{
   background-color: rgb(52, 59, 71);
 } */
-
-input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-/* Change on focus */
-input[type=text]:focus {
-  width: 100%;
-}
