@@ -4,6 +4,8 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../../controllers/user-controller');
 
+//http://localhost:3001/api/user
+
 // POST Create a new user
 router.post('/', userController.createUser);
 
@@ -16,7 +18,7 @@ router.get('/verify', userController.verifyUser);
 // PUT Update a user by ID
 router.put('/:id', userController.updateUserById);
 
-// GET all users
+// GET all user
 router.get('/', userController.getAllUsers);
 
 // DELETE a user by ID

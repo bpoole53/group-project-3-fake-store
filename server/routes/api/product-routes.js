@@ -28,4 +28,5 @@ router.get("/small-water-vessels", productController.getSmallWaterVessels);
 // GET a single product by ID
 router.get("/:id", productController.getProductById);
 
+
 module.exports = router;
