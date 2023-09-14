@@ -52,17 +52,22 @@ ul {
 }
 
 .product-page-title {
-  font-size: 40px;
+  font-size: 60px; 
+  margin-bottom: 20px; 
 }
 
 .product-page-button {
   background-color: black;
-  margin-top: 10px;
+  margin-top: 20px; 
+  font-size: 24px; 
+  padding: 10px 20px; 
 }
 
 .product-text-container {
-  margin-left: 20px;
+  margin-left: 40px; 
+  font-size: 24px; 
 }
+
 
 /* Products Result Page */
 
