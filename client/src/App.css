@@ -1,35 +1,31 @@
 
+
 body {
-  margin: 0;
+  margin: 1;
   padding: 0;
   height: 100vh;
-  /* background-color: rgb(170, 170, 170);
-  min-height: 100vh; */
-} 
+}
 
-
-.inside-body{
+.inside-body {
   margin: 0;
   padding: 0;
-  /* height: 645px;
-  background-color: rgb(170, 170, 170); */
 }
 
-ul{
+ul {
   z-index: 1;
 }
+
 
 /* Header */
 
 .cartNav {
   margin-right: 15px;
 }
-#navbar{
+
+#navbar {
   position: relative;
   z-index: auto;
-  
 }
-
 
 .footer {
   display: flex;
@@ -38,17 +34,12 @@ ul{
   width: 100%;
   bottom: 0;
   top: 40px;
-  height: 200px;
   margin-top: 20px;
-  /* padding: 0; */
-  /* background-color: rgb (26, 30, 36); */
 }
-
 
 /* Individual Product Page */
 
-
-.product-page-container{
+.product-page-container {
   display: flex;
   align-items: center;
   margin: 100px;
@@ -61,13 +52,8 @@ ul{
 }
 
 .product-page-title {
-  /* color: black; */
   font-size: 40px;
 }
-
-/* .product-page-text {
-  color: black;
-} */
 
 .product-page-button {
   background-color: black;
@@ -81,9 +67,10 @@ ul{
 /* Products Result Page */
 
 .productTitle {
-  /* color: black; */
   text-align: center;
   font-size: 50px;
+  padding-bottom: 10px;
+  font-weight: bolder;
 }
 
 .productBtn {
@@ -91,7 +78,7 @@ ul{
   border-color: white;
 }
 
-.productBtn:hover{
+.productBtn:hover {
   background-color: rgb(52, 59, 71);
   border-color: white;
 }
@@ -100,35 +87,38 @@ ul{
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-} 
+}
 
 .productCol {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  border: 2px solid red;
-  width: 800px;
 }
 
 .card-body {
-  height: 150px;
+  height: 200px;
 }
 
 .card-compact {
-  width: 250px;
+  width: 350px;
 }
 
-.card-title, .card-price {
-  font-weight: bold;
+.card-title,
+.card-price {
+  font-weight: 200;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.card-price {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Login and Signup Pages */
 
-/* .loginForm h1, .signupForm h1 {
-   color: black; 
-} */
-
-.loginForm, .signupForm {
+.loginForm,
+.signupForm {
   gap: 10px;
   margin-top: 50px;
   display: flex;
@@ -136,14 +126,10 @@ ul{
   align-items: center;
 }
 
-/* .loginForm .link {
-   color: black; 
-} */
-
 /* Checkout Page */
 
-
-.checkout-form-holder, .payment-form-holder {
+.checkout-form-holder,
+.payment-form-holder {
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
@@ -154,11 +140,8 @@ ul{
   width: 600px;
 }
 
-.product-text-container {
-  margin-left: 20px;
-}
-
-.billing-info-holder, .payment-form  {
+.billing-info-holder,
+.payment-form {
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -166,63 +149,59 @@ ul{
 .cart-card-holder {
   height: fit-content;
 }
-/*      */
 
 #video {
   position: relative;
   z-index: -1;
   width: 100%;
   object-fit: contain;
-  background-color: rgb(26, 30, 36, .9) ;
+  background-color: rgba(26, 30, 36, 0.9);
 }
 
 .hero-content {
   margin-top: 100px;
-  background-color: rgb(26, 30, 36, .4);
+  background-color: rgba(26, 30, 36, 0.4);
   color: white;
 }
 
 .footerimg {
   border-radius: 75px;
-  border-color:rgb(170, 170, 170);
+  border-color: rgb(170, 170, 170);
   border-width: 5px;
 }
 
 img {
   border-radius: 25px;
-  border-color:rgb(170, 170, 170);
-  border-width: .5px;
+  border-color: rgb(170, 170, 170);
+  border-width: 0.5px;
 }
 
 .productImage {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
 }
 
-
-html, body { height: 100%;}
+html, body {
+  height: 100%;
+}
 
 body > footer {
   position: sticky;
   top: 100vh;
 }
 
-aside{
+aside {
   padding-bottom: 10px;
 }
 
-/* .inside-body{
-  background-color: rgb(52, 59, 71);
-} */
-
-input[type=text] {
+input[type="text"] {
   width: 130px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
+input[type="text"]:focus {
   width: 100%;
 }
 
@@ -233,7 +212,9 @@ div.navbar {
 }
 
 ul.menu.menu--horizontal {
- padding-left: 100px;
-
- 
+  padding-left: 100px;
 }
+
+
+
+
