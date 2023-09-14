@@ -37,8 +37,8 @@ A step by step MERN setup was provided instructor Gary Almes as part of the clas
 
 ## Authors
 
-- Annelise
-- Ben
-- Jon
-- Peter
-- Salma
+- Annelise https://github.com/ascolardi
+- Ben https://github.com/bpoole53
+- Jon https://github.com/JJumangi
+- Peter https://github.com/LauerPeter
+- Salma https://github.com/mocha-matcha
