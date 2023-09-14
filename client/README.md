@@ -1,49 +1,70 @@
-# Hull & Deck!
+# Getting Started with Create React App
 
-### "Elegant Watercraft"
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Hull & Deck is an eCoommerce site that specializes in watercraft. Users can create an account, login
+## Available Scripts
 
-## Demo
+In the project directory, you can run:
 
-https://github.com/Ad31aid/real_sementic_html
+### `npm start`
 
-## Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- _Verified Travelers_: CruiseConnect ensures the authenticity of users by verifying travel plans and cruise bookings, enhancing the trustworthiness of the community.
-- _Tailored Matching_: CruiseConnect employs advanced algorithms to match users based on shared interests, preferences, and cruise itineraries. Discover potential matches who will be on the same ship, sailing to the same destinations.
-- _Real-Time Notifications_: Receive notifications when a potential match is nearby or interested in connecting. Never miss an opportunity to meet new friends or kindle a spark of romance.
-- _Secure Messaging_: Engage in meaningful conversations using our secure messaging system. Chat with confidence, knowing that your privacy is a top priority.
-- _Profile Personalization_: Create a vibrant profile that showcases your personality, interests, and cruise plans. Highlight your love for travel, your excitement for new experiences, and what you're looking for in a shipmate.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Tech Stack
+### `npm test`
 
-**Client:**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Server:** Node.js, Express
+### `npm run build`
 
-**Packages:**
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Deployment
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-To deploy this project run
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-  npm run deploy
-```
+### `npm run eject`
 
-## Contributing
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Contributions are always welcome!
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-See `contributing.md` for ways to get started.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Please adhere to this project's `code of conduct`.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Authors
+## Learn More
 
-- Annelise
-- Ben
-- Jon
-- Peter
-- Salma
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
