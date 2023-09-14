@@ -1,6 +1,6 @@
 # Hull & Deck!
 
-![Hull & Deck Logo](<Orange Simple Online Shopping Logo (1).png>)
+![Hull & Deck Logo](client/public/Hull&Deck.png)
 
 ### "Elegant Watercraft"
 
@@ -8,7 +8,7 @@
 
 ## Screenshot of Application
 
-![Hull & Deck Homepage](<Screenshot 2023-09-13 202248.png>)
+![Alt text](<client/public/Screenshot 2023-09-13 202248.png>)
 
 ## Link to Live Application
 
