@@ -18,14 +18,14 @@ https://hull-and-anchor-a86df0a0dbad.herokuapp.com/
 
 Users can:
 
-- create an account
-- login with account information
-- shop products and add products to their cart
-- checkout products from cart
+- Create an account
+- Login with account information
+- Shop products and add products to their cart
+- Checkout products from the cart
 
 ## Running the Application
 
--Simply clone down and in your commandline run:
+-Simply clone down and in your command line run:
 
 ```bash
   npm run dev
@@ -33,7 +33,7 @@ Users can:
 
 ## Starter Code Used
 
-A step by step MERN setup was provided instructor Gary Almes as part of the class lessons. This was utilized and can be found in the 2nd commit.
+A step-by-step MERN setup was provided by instructor Gary Almes as part of the class lessons. This was utilized and can be found in the 2nd commit.
 
 ## Authors
 
