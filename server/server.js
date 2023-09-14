@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //  MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/fake-store', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/fake-store', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

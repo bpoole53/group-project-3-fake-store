@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 async function userAuth(){
     if(Cookies.get('auth-cookie')){
       try {
-        const query = await fetch('api/user/verify', {
+        const query = await fetch('/api/user/verify', {
           method: "POST",
           body: '',
           headers: {
@@ -16,13 +16,13 @@ async function userAuth(){
         if (result && result?.status === 'success') {
           return {result} // logic for successful authentication
         } else {
-          return null;
+          return false;
         }
       } catch(err){
-        return null;        
+        return false;        
       }
     } else {
-      return null// implement logic for non-authenticated user
+      return false// implement logic for non-authenticated user
     }
   }
 
